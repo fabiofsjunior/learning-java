@@ -1,3 +1,4 @@
+package estrutura_dados_algoritmos;
 public class TiposVariaveis {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
@@ -6,7 +7,7 @@ public class TiposVariaveis {
 
 /*int
  * long = 10.1040L;
- * double = 2500;
+ * double = 25.01;
  * float = 3.14F;
  * bolean = true or false;
  * String = "uma string qualquer";
