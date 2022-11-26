@@ -1,7 +1,4 @@
-import javax.print.event.PrintEvent;
-import javax.swing.JOptionPane;
-
-public class LaçoRepeticao {
+public class LacoRepeticao {
     public static void main(String[] args) {
         
         //WHILE
@@ -21,6 +18,6 @@ public class LaçoRepeticao {
             System.out.println(incrementa);
         }
 
-        
+
     }
 }
