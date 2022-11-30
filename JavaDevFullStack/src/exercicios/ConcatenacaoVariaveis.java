@@ -8,7 +8,7 @@ public class ConcatenacaoVariaveis {
         String telefone = "(00) 9 9999-9999";
         String endereco = "Rua numero, bairro, cidade/estado.";
 
-        String saida = "Meu nome é: " + nome + ", de CPF:" + cpf + ", endereço: " +endereco +".";
+        String saida = "Meu nome é: " + nome + ", de CPF:" + cpf + ", endereço: " +endereco + ", telefone:" + telefone + ".";
 
         System.out.println(saida);
 
