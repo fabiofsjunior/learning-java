@@ -3,7 +3,8 @@ public class LacoRepeticao {
         
         //WHILE
         int numero = 0;
-
+        
+        
         while (numero<10){
             numero += 1;
             System.out.println(numero);
