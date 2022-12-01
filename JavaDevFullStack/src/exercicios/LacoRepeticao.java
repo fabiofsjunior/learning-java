@@ -1,22 +1,63 @@
+import java.util.Random;
+
 public class LacoRepeticao {
     public static void main(String[] args) {
         
         //WHILE
-        int numero = 0;
+        int contador1 = 0;
+        System.out.println("Este é o laço de repetição WHILE");
         
-        
-        while (numero<10){
-            numero += 1;
-            System.out.println(numero);
+        while (contador1<10){ //verifica e depois executa
+            contador1 += 1;
+            System.out.println("Contador. " + contador1);
         }
 
+        // DO WHILE 
+        int contador2 = 0;
+        System.out.println("Este é o laço de repetição DO WHILE");
+        
+        do{ //verifica e depois executa
+            contador2 += 1;
+            System.out.println("Contador.. " + contador2);
+        }while (contador2<10);
+                    
+
         //FOR
+        System.out.println("Este é o laço de repetição FOR");
+        for (int contador3 = 1; contador3 <= 10; contador3 ++){
+            System.out.println("Contador... " + contador3);
+        }
+        for (int contador3 = 10; contador3 >= 0; contador3 --){
+            System.out.println("Contador... " + contador3);
+        }
 
-        int incrementa = 0;
 
-        for (int cont = 0; cont < 10; cont ++){
-            incrementa ++;
-            System.out.println(incrementa);
+        //FOR com  BREAK
+        System.out.println("Este é o laço de repetição FOR com um BREAK");
+
+        for (int contador4 = 10; contador4 >= 0; contador4 --){
+            System.out.println("Buscando número..." + contador4);
+            if (contador4 == 7){
+                System.out.println("Encontrei o número que buscava, R= " + contador4);
+                break;
+            }
+        }
+
+        System.out.println("Este é o laço de repetição FOR com um BREAK NO NÚMERO SORTEADO ");
+
+        Random geraUmNumero = new Random();
+
+        int numeroEscolhido = geraUmNumero.nextInt(100);
+
+        System.out.println("O Número escolhido foi: " + numeroEscolhido);
+
+        for (int contador4 = 0; contador4 >= 0; contador4 ++){
+            System.out.println("Buscando número..." + contador4);
+            
+            if (contador4 == numeroEscolhido){
+                System.out.println("Encontrei o número que buscava, R= " + contador4);
+                break;
+            }
         }
 
 
