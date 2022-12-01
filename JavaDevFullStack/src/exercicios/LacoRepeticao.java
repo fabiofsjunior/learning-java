@@ -60,6 +60,32 @@ public class LacoRepeticao {
             }
         }
 
+        System.out.println("Este é o laço de repetição FOR com um CONTINUE NO NÚMERO SORTEADO ");
+
+        Random geraUmNumero2 = new Random();
+
+        int numeroEscolhido2 = geraUmNumero2.nextInt(50);
+        int numeroEscolhido3 = geraUmNumero2.nextInt(50);
+        int numeroEscolhido4 = geraUmNumero2.nextInt(50);
+
+        System.out.println("O Números escolhidos foram: " 
+        + numeroEscolhido2 + ", " 
+        + numeroEscolhido3 + "e " 
+        + numeroEscolhido4 + "." );
+
+        for (int contador4 = 0; contador4 >= 0; contador4 ++){
+            System.out.println("Buscando número..." + contador4);
+            
+            if(contador4 == 50){
+                break;
+            }
+            else if (contador4 == numeroEscolhido2 || contador4 == numeroEscolhido3 || contador4 == numeroEscolhido4){
+                System.out.println("Encontrei o número que buscava, R= " + contador4);
+                continue;
+            }
+            
+        }
+
 
     }
 }
