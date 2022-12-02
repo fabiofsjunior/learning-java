@@ -3,6 +3,7 @@ import javax.swing.JOptionPane;
 public class PrimeiraClasse {
     public static void main(String[] args) {
 
+        // Interação com o Usuário [Preenchimento dos dados]
         String nome = JOptionPane.showInputDialog("Qual o nome do aluno?");
         String idade = JOptionPane.showInputDialog("Qual a idade?");
         String dataNascimento = JOptionPane.showInputDialog("Qual a data de nascimento?");
@@ -12,18 +13,18 @@ public class PrimeiraClasse {
         String dataMatricula = JOptionPane.showInputDialog("Qual o nr da matricula?");
         String nomeEscola = JOptionPane.showInputDialog("Qual o nome da escola?");
         String serieMatriculado = JOptionPane.showInputDialog("Qual a série matriculada?");
-    
+
         String nota1 = JOptionPane.showInputDialog("Digite a 1ª nota: ");
         String nota2 = JOptionPane.showInputDialog("Digite a 2ª nota: ");
         String nota3 = JOptionPane.showInputDialog("Digite a 3ª nota: ");
         String nota4 = JOptionPane.showInputDialog("Digite a 4ª nota: ");
 
-
-        // Agora temos um objeto real namemória
         // Instâncias
-        // Aluno1 é referência ao Objeto Aluno
+
+        // Agora temos um objeto real namemória e 'Aluno1' é referência ao Objeto Aluno.
         Aluno aluno1 = new Aluno(); // João
 
+        //
         aluno1.setNome(nome);
         aluno1.setIdade(Integer.valueOf(idade));
         aluno1.setDataNascimento(dataNascimento);
@@ -37,9 +38,8 @@ public class PrimeiraClasse {
         aluno1.setNota2(Double.parseDouble(nota2));
         aluno1.setNota3(Double.parseDouble(nota3));
         aluno1.setNota4(Double.parseDouble(nota4));
-        
 
-
+        // Saída de dados
         System.out.println("Nome: " + aluno1.getNome());
         System.out.println("Idade: " + aluno1.getIdade());
         System.out.println("Data de nascimento: " + aluno1.getDataNascimento());
@@ -47,6 +47,8 @@ public class PrimeiraClasse {
         System.out.println("Média da nota: " + aluno1.getMediaNota());
         System.out.println("Resultado: " + (aluno1.getAlunoAprovado() ? "Aprovado!" : "Reprovado!"));
 
+        // Saída de dados de forma simplificada metodo 'toString'.
+        System.out.println(aluno1.toString()); // Descrição do objeto na memória.
 
     }
 }

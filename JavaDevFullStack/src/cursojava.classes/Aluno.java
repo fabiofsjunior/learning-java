@@ -10,47 +10,22 @@ public class Aluno {
     String dataMatricula;
     String nomeEscola;
     String serieMatriculado;
-
     double nota1;
     double nota2;
     double nota3;
     double nota4;
 
-    // Construtores
+    // Construtor -----------------------------------
     public Aluno() {
 
     }
 
-    public Aluno(String nomePadrao) {
-        nome = nomePadrao;
-    }
-
-    public Aluno(String nomePadrao, int idadePadrao) {
-        nome = nomePadrao;
-        idade = idadePadrao;
-    }
+    // SETTERS -----------------------------------
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public double getNota1() {
-        return nota1;
-    }
-
-    public double getNota2() {
-        return nota2;
-    }
-
-    public double getNota3() {
-        return nota3;
-    }
-
-    public double getNota4() {
-        return nota4;
-    }
-
-    // SETTERS -----------------------------------
     public void setIdade(int idade) {
         this.idade = idade;
     }
@@ -137,19 +112,37 @@ public class Aluno {
         return serieMatriculado;
     }
 
-    /* Calcula a média do aluno. */
+    public double getNota1() {
+        return nota1;
+    }
+
+    public double getNota2() {
+        return nota2;
+    }
+
+    public double getNota3() {
+        return nota3;
+    }
+
+    public double getNota4() {
+        return nota4;
+    }
+
+    // METODOS -----------------------------------
+
+    // Calcula a média do aluno
     public double getMediaNota() {
         return (nota1 + nota2 + nota3 + nota4) / 4;
     }
 
-    public boolean getAlunoAprovado(){
+    // Verifica se o aluno foi aprovado.
+    public boolean getAlunoAprovado() {
         double media = this.getMediaNota();
-        if (media >= 7){
+        if (media >= 7) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
-   
 
 }
