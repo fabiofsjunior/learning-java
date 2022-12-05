@@ -10,17 +10,17 @@ public class Aluno {
     String dataMatricula;
     String nomeEscola;
     String serieMatriculado;
-    
 
     Disciplina disciplina = new Disciplina();
 
     public void setDisciplina(Disciplina disciplina) {
         this.disciplina = disciplina;
     }
+
     public Disciplina getDisciplina() {
         return disciplina;
     }
-    
+
     // Construtor -----------------------------------
     public Aluno() {
 
@@ -102,8 +102,6 @@ public class Aluno {
         return serieMatriculado;
     }
 
-
-
     // METODOS -----------------------------------
 
     @Override
@@ -113,6 +111,7 @@ public class Aluno {
                 + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado=" + serieMatriculado
                 + ", disciplina=" + disciplina + "]";
     }
+
     // Calcula a média do aluno
     public double getMediaNota() {
         return (disciplina.getNota1() + disciplina.getNota2() + disciplina.getNota3() + disciplina.getNota4()) / 4;

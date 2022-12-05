@@ -22,13 +22,11 @@ public class PrimeiraClasse {
         String nota3 = JOptionPane.showInputDialog("Digite a nota da disciplina: " + disciplina3);
         String disciplina4 = JOptionPane.showInputDialog("Qual a 4ª disciplina: ");
         String nota4 = JOptionPane.showInputDialog("Digite a nota da disciplina: " + disciplina4);
-      
 
         // Instâncias
 
         // Agora temos um objeto real namemória e 'Aluno1' é referência ao Objeto Aluno.
         Aluno aluno1 = new Aluno(); // João
-        
 
         //
         aluno1.setNome(nome);
@@ -40,7 +38,6 @@ public class PrimeiraClasse {
         aluno1.setDataMatricula(dataMatricula);
         aluno1.setNomeEscola(nomeEscola);
         aluno1.setSerieMatriculado(serieMatriculado);
-
 
         aluno1.getDisciplina().setNota1(Double.parseDouble(nota1));
         aluno1.getDisciplina().setNota2(Double.parseDouble(nota2));
