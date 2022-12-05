@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Aluno {
 
     // Atributos
@@ -11,16 +14,16 @@ public class Aluno {
     String nomeEscola;
     String serieMatriculado;
 
-    Disciplina disciplina = new Disciplina();
+    List <Disciplina> disciplinas = new ArrayList<Disciplina>();
 
-    public void setDisciplina(Disciplina disciplina) {
-        this.disciplina = disciplina;
+    public void setDisciplinas(List<Disciplina> disciplinas) {
+        this.disciplinas = disciplinas;
+    }
+    public List<Disciplina> getDisciplinas() {
+        return disciplinas;
     }
 
-    public Disciplina getDisciplina() {
-        return disciplina;
-    }
-
+  
     // Construtor -----------------------------------
     public Aluno() {
 
@@ -108,13 +111,17 @@ public class Aluno {
     public String toString() {
         return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
                 + registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", dataMatricula="
-                + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado=" + serieMatriculado
-                + ", disciplina=" + disciplina + "]";
+                + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado=" + serieMatriculado + "]";
     }
 
     // Calcula a média do aluno
     public double getMediaNota() {
-        return (disciplina.getNota1() + disciplina.getNota2() + disciplina.getNota3() + disciplina.getNota4()) / 4;
+        double somaNotas = 0.0;
+        for (Disciplina disciplina : disciplinas) {
+            somaNotas += disciplina.getNota();
+        }
+        return somaNotas/ disciplinas.size();
+
     }
 
     // Verifica se o aluno foi aprovado.

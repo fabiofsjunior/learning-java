@@ -3,6 +3,11 @@ import javax.swing.JOptionPane;
 public class PrimeiraClasse {
     public static void main(String[] args) {
 
+        // Instâncias
+
+        // Agora temos um objeto real namemória e 'Aluno1' é referência ao Objeto Aluno.
+        Aluno aluno1 = new Aluno(); // Ex.: João
+
         // Interação com o Usuário [Preenchimento dos dados]
         String nome = JOptionPane.showInputDialog("Qual o nome do aluno?");
         String idade = JOptionPane.showInputDialog("Qual a idade?");
@@ -14,19 +19,31 @@ public class PrimeiraClasse {
         String nomeEscola = JOptionPane.showInputDialog("Qual o nome da escola?");
         String serieMatriculado = JOptionPane.showInputDialog("Qual a série matriculada?");
 
-        String disciplina1 = JOptionPane.showInputDialog("Qual a 1ª disciplina: ");
-        String nota1 = JOptionPane.showInputDialog("Digite a nota da disciplina: " + disciplina1);
-        String disciplina2 = JOptionPane.showInputDialog("Qual a 2ª disciplina: ");
-        String nota2 = JOptionPane.showInputDialog("Digite a nota da disciplina: " + disciplina2);
-        String disciplina3 = JOptionPane.showInputDialog("Qual a 3ª disciplina: ");
-        String nota3 = JOptionPane.showInputDialog("Digite a nota da disciplina: " + disciplina3);
-        String disciplina4 = JOptionPane.showInputDialog("Qual a 4ª disciplina: ");
-        String nota4 = JOptionPane.showInputDialog("Digite a nota da disciplina: " + disciplina4);
+        for (int pos = 1; pos <= 4; pos++) {
+            String nomeDisciplina = JOptionPane.showInputDialog("Nome da disciplina " + pos + " ?");
+            String notaDisciplina = JOptionPane.showInputDialog("Nota da disciplina " + pos + " ?");
+            Disciplina disciplina = new Disciplina();
+            disciplina.setDisciplina(nomeDisciplina);
+            disciplina.setNota(Double.valueOf(notaDisciplina));
+            aluno1.getDisciplinas().add(disciplina);
 
-        // Instâncias
+        }
 
-        // Agora temos um objeto real namemória e 'Aluno1' é referência ao Objeto Aluno.
-        Aluno aluno1 = new Aluno(); // João
+        /*
+         * String disciplina1 = JOptionPane.showInputDialog("Qual a 1ª disciplina: ");
+         * String nota1 = JOptionPane.showInputDialog("Digite a nota da disciplina: " +
+         * disciplina1);
+         * String disciplina2 = JOptionPane.showInputDialog("Qual a 2ª disciplina: ");
+         * String nota2 = JOptionPane.showInputDialog("Digite a nota da disciplina: " +
+         * disciplina2);
+         * String disciplina3 = JOptionPane.showInputDialog("Qual a 3ª disciplina: ");
+         * String nota3 = JOptionPane.showInputDialog("Digite a nota da disciplina: " +
+         * disciplina3);
+         * String disciplina4 = JOptionPane.showInputDialog("Qual a 4ª disciplina: ");
+         * String nota4 = JOptionPane.showInputDialog("Digite a nota da disciplina: " +
+         * disciplina4);
+         */
+        
 
         //
         aluno1.setNome(nome);
@@ -39,15 +56,29 @@ public class PrimeiraClasse {
         aluno1.setNomeEscola(nomeEscola);
         aluno1.setSerieMatriculado(serieMatriculado);
 
-        aluno1.getDisciplina().setNota1(Double.parseDouble(nota1));
-        aluno1.getDisciplina().setNota2(Double.parseDouble(nota2));
-        aluno1.getDisciplina().setNota3(Double.parseDouble(nota3));
-        aluno1.getDisciplina().setNota4(Double.parseDouble(nota4));
+        // Disciplina disciplina1 = new Disciplina();
+        // disciplina1.setDisciplina(JOptionPane.showInputDialog("Qual a 1ª disciplina: "));
+        // disciplina1.setNota(9);
 
-        aluno1.getDisciplina().setDisciplina1(disciplina1);// getDisciplina().setDisciplina1(disciplina1);
-        aluno1.getDisciplina().setDisciplina2(disciplina2);
-        aluno1.getDisciplina().setDisciplina3(disciplina3);
-        aluno1.getDisciplina().setDisciplina4(disciplina4);
+        // aluno1.getDisciplinas().add(disciplina1);
+
+        // Disciplina disciplina2 = new Disciplina();
+        // disciplina2.setDisciplina("Java Orientado Objetos");
+        // disciplina2.setNota(8);
+
+        // aluno1.getDisciplinas().add(disciplina2);
+
+        // Disciplina disciplina3 = new Disciplina();
+        // disciplina3.setDisciplina("Springboot");
+        // disciplina3.setNota(7);
+
+        // aluno1.getDisciplinas().add(disciplina3);
+
+        // Disciplina disciplina4 = new Disciplina();
+        // disciplina3.setDisciplina("HTML/CSS");
+        // disciplina3.setNota(9);
+
+        // aluno1.getDisciplinas().add(disciplina4);
 
         // Saída de dados
         System.out.println("Nome: " + aluno1.getNome());
