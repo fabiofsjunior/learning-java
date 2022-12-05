@@ -14,15 +14,21 @@ public class PrimeiraClasse {
         String nomeEscola = JOptionPane.showInputDialog("Qual o nome da escola?");
         String serieMatriculado = JOptionPane.showInputDialog("Qual a série matriculada?");
 
-        String nota1 = JOptionPane.showInputDialog("Digite a 1ª nota: ");
-        String nota2 = JOptionPane.showInputDialog("Digite a 2ª nota: ");
-        String nota3 = JOptionPane.showInputDialog("Digite a 3ª nota: ");
-        String nota4 = JOptionPane.showInputDialog("Digite a 4ª nota: ");
+        String disciplina1 = JOptionPane.showInputDialog("Qual a 1ª disciplina: ");
+        String nota1 = JOptionPane.showInputDialog("Digite a nota da disciplina: " + disciplina1);
+        String disciplina2 = JOptionPane.showInputDialog("Qual a 2ª disciplina: ");
+        String nota2 = JOptionPane.showInputDialog("Digite a nota da disciplina: " + disciplina2);
+        String disciplina3 = JOptionPane.showInputDialog("Qual a 3ª disciplina: ");
+        String nota3 = JOptionPane.showInputDialog("Digite a nota da disciplina: " + disciplina3);
+        String disciplina4 = JOptionPane.showInputDialog("Qual a 4ª disciplina: ");
+        String nota4 = JOptionPane.showInputDialog("Digite a nota da disciplina: " + disciplina4);
+      
 
         // Instâncias
 
         // Agora temos um objeto real namemória e 'Aluno1' é referência ao Objeto Aluno.
         Aluno aluno1 = new Aluno(); // João
+        
 
         //
         aluno1.setNome(nome);
@@ -34,10 +40,17 @@ public class PrimeiraClasse {
         aluno1.setDataMatricula(dataMatricula);
         aluno1.setNomeEscola(nomeEscola);
         aluno1.setSerieMatriculado(serieMatriculado);
-        aluno1.setNota1(Double.parseDouble(nota1));
-        aluno1.setNota2(Double.parseDouble(nota2));
-        aluno1.setNota3(Double.parseDouble(nota3));
-        aluno1.setNota4(Double.parseDouble(nota4));
+
+
+        aluno1.getDisciplina().setNota1(Double.parseDouble(nota1));
+        aluno1.getDisciplina().setNota2(Double.parseDouble(nota2));
+        aluno1.getDisciplina().setNota3(Double.parseDouble(nota3));
+        aluno1.getDisciplina().setNota4(Double.parseDouble(nota4));
+
+        aluno1.getDisciplina().setDisciplina1(disciplina1);// getDisciplina().setDisciplina1(disciplina1);
+        aluno1.getDisciplina().setDisciplina2(disciplina2);
+        aluno1.getDisciplina().setDisciplina3(disciplina3);
+        aluno1.getDisciplina().setDisciplina4(disciplina4);
 
         // Saída de dados
         System.out.println("Nome: " + aluno1.getNome());

@@ -10,11 +10,17 @@ public class Aluno {
     String dataMatricula;
     String nomeEscola;
     String serieMatriculado;
-    double nota1;
-    double nota2;
-    double nota3;
-    double nota4;
+    
 
+    Disciplina disciplina = new Disciplina();
+
+    public void setDisciplina(Disciplina disciplina) {
+        this.disciplina = disciplina;
+    }
+    public Disciplina getDisciplina() {
+        return disciplina;
+    }
+    
     // Construtor -----------------------------------
     public Aluno() {
 
@@ -58,22 +64,6 @@ public class Aluno {
         this.serieMatriculado = serieMatriculado;
     }
 
-    public void setNota1(double nota1) {
-        this.nota1 = nota1;
-    }
-
-    public void setNota2(double nota2) {
-        this.nota2 = nota2;
-    }
-
-    public void setNota3(double nota3) {
-        this.nota3 = nota3;
-    }
-
-    public void setNota4(double nota4) {
-        this.nota4 = nota4;
-    }
-
     // GETTERS -----------------------------------
 
     public String getNome() {
@@ -112,27 +102,20 @@ public class Aluno {
         return serieMatriculado;
     }
 
-    public double getNota1() {
-        return nota1;
-    }
 
-    public double getNota2() {
-        return nota2;
-    }
-
-    public double getNota3() {
-        return nota3;
-    }
-
-    public double getNota4() {
-        return nota4;
-    }
 
     // METODOS -----------------------------------
 
+    @Override
+    public String toString() {
+        return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
+                + registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", dataMatricula="
+                + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado=" + serieMatriculado
+                + ", disciplina=" + disciplina + "]";
+    }
     // Calcula a média do aluno
     public double getMediaNota() {
-        return (nota1 + nota2 + nota3 + nota4) / 4;
+        return (disciplina.getNota1() + disciplina.getNota2() + disciplina.getNota3() + disciplina.getNota4()) / 4;
     }
 
     // Verifica se o aluno foi aprovado.
