@@ -134,4 +134,17 @@ public class Aluno {
         }
     }
 
+    public String getAlunoAprovado2(){
+        double media = this.getMediaNota();
+        if (media >= 5){
+            if (media >=7){
+                return "Aluno aprovado!";
+            }else {
+                return "Aluno em recuperação";
+            }
+        }else {
+            return "Aluno reprovado!";
+        }
+    }
+
 }
