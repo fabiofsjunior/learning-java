@@ -1,4 +1,3 @@
-import javax.swing.JOptionPane;
 
 /* [Forma mais simples]
 Iniciar o programa: 
@@ -22,10 +21,20 @@ https://fabiofsjunior.github.io/gestorfinanceiro/
 public class GestorFinanceiro {
     public static void main(String[] args) {
 
+        ClassePlanilha planilhaDezembro = new ClassePlanilha();
+
+
+        planilhaDezembro.adicionarTransacao();
+        planilhaDezembro.continuarAddTransacao();
+
+        System.out.println(planilhaDezembro);
+        System.out.println("Total de gastos no mês de Dezembro foi de: R$ " + planilhaDezembro.totalGasto);
+
         
 
 
 
+        /* 
         String resposta;
 
         resposta = JOptionPane.showInputDialog(args);
@@ -48,7 +57,7 @@ public class GestorFinanceiro {
             System.out.println("[4] - Fechar Programa.");
 
             resposta = JOptionPane.showInputDialog(args);
-            */
+           
             break;
         }
 
@@ -75,6 +84,6 @@ public class GestorFinanceiro {
                 System.out.println("Não escolheu nenhuma opção válida");
         }
         System.out.println("validando opção escolhida "+resposta);
-
+        */
     }
 }
