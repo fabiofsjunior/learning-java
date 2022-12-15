@@ -14,41 +14,41 @@ Uma lista de gastos pessoais pode conter vários atributos, dependendo do objeti
 Esses são apenas alguns exemplos de atributos que poderiam estar incluídos em uma lista de gastos pessoais. A lista pode conter outros atributos além desses, dependendo das necessidades e preferências da pessoa que a criou.
  */
 
-public class ClassePlanilha {
+public class PlanilhaGastos {
 
     // ATRIBUTOS
 
-    List<ClasseTransacao> listaDeGastos = new ArrayList<>();
+    List<ItemTransacao> listaDeGastos = new ArrayList<>();
     double totalGasto;
 
-    public ClassePlanilha() {
+    public PlanilhaGastos() {
 
     }
 
-    public ClassePlanilha(double totalGasto) {
+    public PlanilhaGastos(double totalGasto) {
         this.totalGasto = totalGasto;
     }
 
-    // Metodo cria um objeto e adiciona a lista de gastos, com inputs pelo usuário
-    // via Teclado.
+    // Metodo cria um objeto e adiciona a lista de gastos, com inputs pelo usuário.
     public void adicionarTransacao() {
-        ClasseTransacao controleGastos = new ClasseTransacao(null, 0, null, null, null);
+        ItemTransacao controleGastos = new ItemTransacao(null, null, totalGasto, null, null, null);
 
-        controleGastos.nomeTransacao = JOptionPane
-                .showInputDialog("Digite uma descrição para o gasto [Ex.: Crédito Celular.]: ");
         controleGastos.valorTransacao = Double
                 .parseDouble(JOptionPane.showInputDialog("Digite o valor gasto [Ex.: 12.55]: "));
-        // controleGastos.tagTransacao = JOptionPane
-        // .showInputDialog(
-        // "Digite uma TAG, [1 = Alimentação], [2 = Transporte], [3 = Saúde], [4 = Lazer], [5 = outros]: ");
-        // controleGastos.dataCompraTransacao = JOptionPane.showInputDialog("Digite a DATA do gasto [ex.: dd/mm/yy]: ");
-        // controleGastos.formaPagamentoTransacao = JOptionPane
-        // .showInputDialog(
-        // "Digite uma Forma de Pagamento, [1 = Crédito], [2 = Débito], [3 = Pix], [4 = Dinheiro]: ");
+        controleGastos.nomeTransacao = JOptionPane
+                .showInputDialog("Digite uma descrição para o gasto [Ex.: Crédito Celular.]: ");
+        controleGastos.tagTransacao = JOptionPane
+                .showInputDialog(
+                        "Digite uma TAG, [1 = Alimentação], [2 = Transporte], [3 = Saúde], [4 = Lazer], [5 = outros]: ");
+        controleGastos.dataCompraTransacao = JOptionPane.showInputDialog("Digite a DATA do gasto [ex.: dd/mm/yy]: ");
+        controleGastos.formaPagamentoTransacao = JOptionPane
+                .showInputDialog(
+                        "Digite uma Forma de Pagamento, [1 = Crédito], [2 = Débito], [3 = Pix], [4 = Dinheiro]: ");
 
         this.listaDeGastos.add(controleGastos);
+
+        // chamada para adicionar o valor ao gasto total.
         somarGastos(controleGastos.valorTransacao);
-        // this.totalGasto += controleGastos.valorTransacao;
 
     }
 
@@ -66,17 +66,25 @@ public class ClassePlanilha {
             continuarAddTransacao();
         }
     }
+    public void mostrarGastos(){
+        for (int pos = 1; pos <= this.listaDeGastos.size(); pos++) {
+            System.out.println("Gastos: ");
+            System.out.println("===============================================");
+        }
+
+
+    }
 
     @Override
     public String toString() {
         return "ClassePlanilha [listaDeGastos=" + listaDeGastos + "]";
     }
 
-    public List<ClasseTransacao> getListaDeGastos() {
+    public List<ItemTransacao> getListaDeGastos() {
         return listaDeGastos;
     }
 
-    public void setListaDeGastos(List<ClasseTransacao> listaDeGastos) {
+    public void setListaDeGastos(List<ItemTransacao> listaDeGastos) {
         this.listaDeGastos = listaDeGastos;
     }
 

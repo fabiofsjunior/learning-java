@@ -1,6 +1,6 @@
 import java.util.UUID;
 
-public class ClasseTransacao {
+public class ItemTransacao {
 
     UUID idTransacao;
     String nomeTransacao;
@@ -9,9 +9,9 @@ public class ClasseTransacao {
     String dataCompraTransacao;
     String formaPagamentoTransacao;
 
-    public ClasseTransacao(String nomeTransacao, double valorTransacao, String tagTransacao, String dataCompraTransacao,
-            String formaPagamentoTransacao) {
-        this.idTransacao = UUID.randomUUID();
+    public ItemTransacao(UUID idTransacao, String nomeTransacao, double valorTransacao, String tagTransacao,
+            String dataCompraTransacao, String formaPagamentoTransacao) {
+        this.idTransacao = idTransacao;
         this.nomeTransacao = nomeTransacao;
         this.valorTransacao = valorTransacao;
         this.tagTransacao = tagTransacao;
@@ -41,7 +41,7 @@ public class ClasseTransacao {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        ClasseTransacao other = (ClasseTransacao) obj;
+        ItemTransacao other = (ItemTransacao) obj;
         if (nomeTransacao == null) {
             if (other.nomeTransacao != null)
                 return false;
@@ -109,7 +109,7 @@ public class ClasseTransacao {
 
     @Override
     public String toString() {
-        return "ClasseTransacao [idTransacao=" + idTransacao + ", nomeTransacao=" + nomeTransacao + ", valorTransacao="
+        return "ItemTransacao [idTransacao=" + idTransacao + ", nomeTransacao=" + nomeTransacao + ", valorTransacao="
                 + valorTransacao + ", tagTransacao=" + tagTransacao + ", dataCompraTransacao=" + dataCompraTransacao
                 + ", formaPagamentoTransacao=" + formaPagamentoTransacao + "]";
     }
