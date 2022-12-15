@@ -39,11 +39,11 @@ public class PlanilhaGastos {
                 .showInputDialog("Digite uma descrição para o gasto [Ex.: Crédito Celular.]: ");
         controleGastos.tagTransacao = JOptionPane
                 .showInputDialog(
-                        "Digite uma TAG, [1 = Alimentação], [2 = Transporte], [3 = Saúde], [4 = Lazer], [5 = outros]: ");
+                        "Digite uma TAG: \n[1 = Alimentação], \n[2 = Transporte], \n[3 = Saúde], \n[4 = Lazer], \n[5 = Roupa/Calçado], \n[6 = outros]");
         controleGastos.dataCompraTransacao = JOptionPane.showInputDialog("Digite a DATA do gasto [ex.: dd/mm/yy]: ");
         controleGastos.formaPagamentoTransacao = JOptionPane
                 .showInputDialog(
-                        "Digite uma Forma de Pagamento, [1 = Crédito], [2 = Débito], [3 = Pix], [4 = Dinheiro]: ");
+                        "Digite uma Forma de Pagamento: \n[1 = Dinheiro], \n[2 = Crédito], \n[3 = Débito], \n[4 = Pix]");
 
         this.listaDeGastos.add(controleGastos);
 
@@ -66,17 +66,54 @@ public class PlanilhaGastos {
             continuarAddTransacao();
         }
     }
-    public void mostrarGastos(){
+
+    public void mostrarGastos() {
         for (ItemTransacao itemTransacao : listaDeGastos) {
-            System.out.println("ID: " + itemTransacao.idTransacao );
-            System.out.println("NOME: " + itemTransacao.nomeTransacao );
-            System.out.println("VALOR: R$" + itemTransacao.valorTransacao);
-            System.out.println("TAG: " + itemTransacao.tagTransacao );
-            System.out.println("DATA: " + itemTransacao.dataCompraTransacao );
-            System.out.println("FORMA DE PAGAMENTO: " + itemTransacao.formaPagamentoTransacao );
+            System.out.println("ID/INDEX: " + itemTransacao.idTransacao + "-" + listaDeGastos.indexOf(itemTransacao)+";");
+            System.out.println("NOME: " + itemTransacao.nomeTransacao + ";");
+            System.out.println("VALOR: R$" + itemTransacao.valorTransacao + ";");
+            switch (itemTransacao.tagTransacao) {
+
+                case "1":
+                    System.out.println("TAG: Alimentação;");
+                    break;
+                case "2":
+                    System.out.println("TAG: Transporte;");
+                    break;
+                case "3":
+                    System.out.println("TAG: Saúde;");
+                    break;
+                case "4":
+                    System.out.println("TAG: Lazer;");
+                    break;
+                case "5":
+                    System.out.println("TAG: Roupa/Calçado;");
+                    break;
+                case "6":
+                    System.out.println("TAG: Outros;");
+                    break;
+            }
+
+            System.out.println("DATA: " + itemTransacao.dataCompraTransacao + ";");
+
+            switch (itemTransacao.formaPagamentoTransacao) {
+
+                case "1":
+                    System.out.println("TAG: Dinheiro;");
+                    break;
+                case "2":
+                    System.out.println("TAG: Crédito;");
+                    break;
+                case "3":
+                    System.out.println("TAG: Débito;");
+                    break;
+                case "4":
+                    System.out.println("TAG: Pix;");
+                    break;
+            }
+            System.out.println("FORMA DE PAGAMENTO: " + itemTransacao.formaPagamentoTransacao + ";");
             System.out.println("================================================================");
         }
-
 
     }
 
