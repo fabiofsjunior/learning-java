@@ -11,7 +11,7 @@ public class ItemTransacao {
 
     public ItemTransacao(UUID idTransacao, String nomeTransacao, double valorTransacao, String tagTransacao,
             String dataCompraTransacao, String formaPagamentoTransacao) {
-        this.idTransacao = idTransacao;
+        this.idTransacao = UUID.randomUUID();
         this.nomeTransacao = nomeTransacao;
         this.valorTransacao = valorTransacao;
         this.tagTransacao = tagTransacao;

@@ -67,9 +67,14 @@ public class PlanilhaGastos {
         }
     }
     public void mostrarGastos(){
-        for (int pos = 1; pos <= this.listaDeGastos.size(); pos++) {
-            System.out.println("Gastos: ");
-            System.out.println("===============================================");
+        for (ItemTransacao itemTransacao : listaDeGastos) {
+            System.out.println("ID: " + itemTransacao.idTransacao );
+            System.out.println("NOME: " + itemTransacao.nomeTransacao );
+            System.out.println("VALOR: R$" + itemTransacao.valorTransacao);
+            System.out.println("TAG: " + itemTransacao.tagTransacao );
+            System.out.println("DATA: " + itemTransacao.dataCompraTransacao );
+            System.out.println("FORMA DE PAGAMENTO: " + itemTransacao.formaPagamentoTransacao );
+            System.out.println("================================================================");
         }
 
 
