@@ -23,10 +23,8 @@ public class GestorFinanceiro {
     public static void main(String[] args) {
 
         PlanilhaGastos planilhaDezembro = new PlanilhaGastos();
-        //PlanilhaGastos listaPorTags = new PlanilhaGastos();
-        //PlanilhaGastos listaPorFormaPagamento = new PlanilhaGastos();
-
-
+        // PlanilhaGastos listaPorTags = new PlanilhaGastos();
+        // PlanilhaGastos listaPorFormaPagamento = new PlanilhaGastos();
 
         JOptionPane.showMessageDialog(null, "Gestor de Gastos Pessoais v1.0");
         planilhaDezembro.adicionarTransacao();
@@ -35,9 +33,11 @@ public class GestorFinanceiro {
         // System.out.println(planilhaDezembro);
         planilhaDezembro.mostrarGastos();
 
-        JOptionPane.showMessageDialog(null, "Total de gastos no mês de Dezembro foi de: R$ " + planilhaDezembro.totalGasto);
+        JOptionPane.showMessageDialog(null,
+                "Total de gastos no mês de Dezembro foi de: R$ " + planilhaDezembro.totalGasto);
 
-        // System.out.println("Total de gastos no mês de Dezembro foi de: R$ " + planilhaDezembro.totalGasto);
+        // System.out.println("Total de gastos no mês de Dezembro foi de: R$ " +
+        // planilhaDezembro.totalGasto);
 
         /*
          * String resposta;

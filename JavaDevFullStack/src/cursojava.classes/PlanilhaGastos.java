@@ -69,7 +69,8 @@ public class PlanilhaGastos {
 
     public void mostrarGastos() {
         for (ItemTransacao itemTransacao : listaDeGastos) {
-            System.out.println("ID/INDEX: " + itemTransacao.idTransacao + "-" + listaDeGastos.indexOf(itemTransacao)+";");
+            System.out.println(
+                    "ID/INDEX: " + itemTransacao.idTransacao + "-" + listaDeGastos.indexOf(itemTransacao) + ";");
             System.out.println("NOME: " + itemTransacao.nomeTransacao + ";");
             System.out.println("VALOR: R$" + itemTransacao.valorTransacao + ";");
             switch (itemTransacao.tagTransacao) {
