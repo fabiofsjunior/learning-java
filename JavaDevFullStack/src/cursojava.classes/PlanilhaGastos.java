@@ -99,19 +99,18 @@ public class PlanilhaGastos {
             switch (itemTransacao.formaPagamentoTransacao) {
 
                 case "1":
-                    System.out.println("TAG: Dinheiro;");
+                    System.out.println("FORMA DE PAGAMENTO: Dinheiro;");
                     break;
                 case "2":
-                    System.out.println("TAG: Crédito;");
+                    System.out.println("FORMA DE PAGAMENTO: Crédito;");
                     break;
                 case "3":
-                    System.out.println("TAG: Débito;");
+                    System.out.println("FORMA DE PAGAMENTO: Débito;");
                     break;
                 case "4":
-                    System.out.println("TAG: Pix;");
+                    System.out.println("FORMA DE PAGAMENTO: Pix;");
                     break;
             }
-            System.out.println("FORMA DE PAGAMENTO: " + itemTransacao.formaPagamentoTransacao + ";");
             System.out.println("================================================================");
         }
 
