@@ -19,13 +19,16 @@ public class PlanilhaGastos {
     // ATRIBUTOS
 
     List<ItemTransacao> listaDeGastos = new ArrayList<>();
+    String listNome;
     double totalGasto;
 
     public PlanilhaGastos() {
 
     }
 
-    public PlanilhaGastos(double totalGasto) {
+    public PlanilhaGastos(List<ItemTransacao> listaDeGastos, String listNome, double totalGasto) {
+        this.listaDeGastos = listaDeGastos;
+        this.listNome = listNome;
         this.totalGasto = totalGasto;
     }
 
@@ -34,9 +37,9 @@ public class PlanilhaGastos {
         ItemTransacao controleGastos = new ItemTransacao(null, null, totalGasto, null, null, null);
 
         controleGastos.valorTransacao = Double
-                .parseDouble(JOptionPane.showInputDialog("Digite o valor gasto [Ex.: 12.55]: "));
+                .parseDouble(JOptionPane.showInputDialog("Digite o valor gasto \n[Ex.: 12.55]: "));
         controleGastos.nomeTransacao = JOptionPane
-                .showInputDialog("Digite uma descrição para o gasto [Ex.: Crédito Celular.]: ");
+                .showInputDialog("Digite uma descrição para o gasto \n[Ex.: Crédito Celular.]: ");
         controleGastos.tagTransacao = JOptionPane
                 .showInputDialog(
                         "Digite uma TAG: \n[1 = Alimentação], \n[2 = Transporte], \n[3 = Saúde], \n[4 = Lazer], \n[5 = Roupa/Calçado], \n[6 = outros]");
@@ -67,10 +70,41 @@ public class PlanilhaGastos {
         }
     }
 
-    public void mostrarGastos() {
+    public void listarPorTags(List<ItemTransacao> listaDeGastos) {
+
         for (ItemTransacao itemTransacao : listaDeGastos) {
+
+            switch (itemTransacao.getTagTransacao()) {
+
+                case "1":
+                    this.listaDeGastos.add(itemTransacao);
+                    somarGastos(this.totalGasto);
+                    break;
+                case "2":
+                    System.out.println("TAG: Transporte;");
+                    break;
+                case "3":
+                    System.out.println("TAG: Saúde;");
+                    break;
+                case "4":
+                    System.out.println("TAG: Lazer;");
+                    break;
+                case "5":
+                    System.out.println("TAG: Roupa/Calçado;");
+                    break;
+                case "6":
+                    System.out.println("TAG: Outros;");
+                    break;
+            }
+
+        }
+    }
+
+    public void mostrarGastos() {
+        System.out.println(this.listaDeGastos);
+        for (ItemTransacao itemTransacao : this.listaDeGastos) {
             System.out.println(
-                    "ID/INDEX: " + itemTransacao.idTransacao + "-" + listaDeGastos.indexOf(itemTransacao) + ";");
+                    "ID/INDEX: " + itemTransacao.idTransacao + "-" + this.listaDeGastos.indexOf(itemTransacao) + ";");
             System.out.println("NOME: " + itemTransacao.nomeTransacao + ";");
             System.out.println("VALOR: R$" + itemTransacao.valorTransacao + ";");
             switch (itemTransacao.tagTransacao) {
@@ -117,10 +151,7 @@ public class PlanilhaGastos {
 
     }
 
-    @Override
-    public String toString() {
-        return "ClassePlanilha [listaDeGastos=" + listaDeGastos + "]";
-    }
+    
 
     public List<ItemTransacao> getListaDeGastos() {
         return listaDeGastos;
@@ -130,6 +161,14 @@ public class PlanilhaGastos {
         this.listaDeGastos = listaDeGastos;
     }
 
+    public String getListNome() {
+        return listNome;
+    }
+
+    public void setListNome(String listNome) {
+        this.listNome = listNome;
+    }
+
     public double getTotalGasto() {
         return totalGasto;
     }
@@ -137,5 +176,49 @@ public class PlanilhaGastos {
     public void setTotalGasto(double totalGasto) {
         this.totalGasto = totalGasto;
     }
+
+    @Override
+    public String toString() {
+        return "PlanilhaGastos [listaDeGastos=" + listaDeGastos + ", listNome=" + listNome + ", totalGasto="
+                + totalGasto + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((listaDeGastos == null) ? 0 : listaDeGastos.hashCode());
+        result = prime * result + ((listNome == null) ? 0 : listNome.hashCode());
+        long temp;
+        temp = Double.doubleToLongBits(totalGasto);
+        result = prime * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        PlanilhaGastos other = (PlanilhaGastos) obj;
+        if (listaDeGastos == null) {
+            if (other.listaDeGastos != null)
+                return false;
+        } else if (!listaDeGastos.equals(other.listaDeGastos))
+            return false;
+        if (listNome == null) {
+            if (other.listNome != null)
+                return false;
+        } else if (!listNome.equals(other.listNome))
+            return false;
+        if (Double.doubleToLongBits(totalGasto) != Double.doubleToLongBits(other.totalGasto))
+            return false;
+        return true;
+    }
+
+    
 
 }

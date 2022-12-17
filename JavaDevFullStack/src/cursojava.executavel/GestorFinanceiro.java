@@ -23,73 +23,33 @@ public class GestorFinanceiro {
     public static void main(String[] args) {
 
         PlanilhaGastos planilhaDezembro = new PlanilhaGastos();
+
         // PlanilhaGastos listaPorTags = new PlanilhaGastos();
+        PlanilhaGastos listaTagAlimentacao = new PlanilhaGastos(); // TAG == 1
+        listaTagAlimentacao.listNome = "Tag Alimentação";
+        PlanilhaGastos listaTagTransporte = new PlanilhaGastos(); // TAG == 2
+        PlanilhaGastos listaTagSaude = new PlanilhaGastos(); // TAG == 3
+        PlanilhaGastos listaTagLazer = new PlanilhaGastos(); // TAG == 4
+        PlanilhaGastos listaTagRoupas = new PlanilhaGastos(); // TAG == 5
+        PlanilhaGastos listaTagOutros = new PlanilhaGastos(); // TAG == 6
+
         // PlanilhaGastos listaPorFormaPagamento = new PlanilhaGastos();
+        PlanilhaGastos listaPagDinheiro = new PlanilhaGastos(); // TAG == 1
+        PlanilhaGastos listaPagCredito = new PlanilhaGastos(); // TAG == 2
+        PlanilhaGastos listaPagDebito = new PlanilhaGastos(); // TAG == 3
+        PlanilhaGastos listaPagPix = new PlanilhaGastos(); // TAG == 4
 
         JOptionPane.showMessageDialog(null, "Gestor de Gastos Pessoais v1.0");
         planilhaDezembro.adicionarTransacao();
         planilhaDezembro.continuarAddTransacao();
 
-        // System.out.println(planilhaDezembro);
         planilhaDezembro.mostrarGastos();
 
         JOptionPane.showMessageDialog(null,
                 "Total de gastos no mês de Dezembro foi de: R$ " + planilhaDezembro.totalGasto);
 
-        // System.out.println("Total de gastos no mês de Dezembro foi de: R$ " +
-        // planilhaDezembro.totalGasto);
-
-        /*
-         * String resposta;
-         * 
-         * resposta = JOptionPane.showInputDialog(args);
-         * int respostaConvertida = Integer.parseInt(resposta);
-         * 
-         * while (respostaConvertida != 1) {
-         * if (respostaConvertida == 1){
-         * System.out.println("loading...");
-         * break;
-         * }
-         * else{
-         * System.out.println("Opção errada.");
-         * }
-         * /*
-         * System.out.println("Este é seu Gestor de Finanças Pessoais v1.0");
-         * System.out.println("[------------- M E N U -------------]");
-         * System.out.println("[1] - Adicionar Gasto.");
-         * System.out.println("[2] - Remover Gasto.");
-         * System.out.println("[3] - Ver Gráfico.");
-         * System.out.println("[4] - Fechar Programa.");
-         * 
-         * resposta = JOptionPane.showInputDialog(args);
-         * 
-         * break;
-         * }
-         * 
-         * switch (resposta) {
-         * 
-         * case "1":
-         * break;
-         * 
-         * case "2":
-         * System.out.println("Opção ainda em desenvolvimento.");
-         * break;
-         * 
-         * case "3":
-         * System.out.println("Opção ainda em desenvolvimento.");
-         * 
-         * break;
-         * 
-         * case "4":
-         * System.out.println("Opção ainda em desenvolvimento.");
-         * 
-         * break;
-         * 
-         * default:
-         * System.out.println("Não escolheu nenhuma opção válida");
-         * }
-         * System.out.println("validando opção escolhida "+resposta);
-         */
-
+        listaTagAlimentacao.listarPorTags(planilhaDezembro.getListaDeGastos());
+        listaTagAlimentacao.mostrarGastos();
+        
     }
 }
