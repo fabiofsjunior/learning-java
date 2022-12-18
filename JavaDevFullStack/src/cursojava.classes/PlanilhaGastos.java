@@ -78,7 +78,7 @@ public class PlanilhaGastos {
 
                 case "1":
                     this.listaDeGastos.add(itemTransacao);
-                    somarGastos(this.totalGasto);
+                    somarGastos(itemTransacao.getValorTransacao());
                     break;
                 case "2":
                     System.out.println("TAG: Transporte;");
@@ -101,7 +101,6 @@ public class PlanilhaGastos {
     }
 
     public void mostrarGastos() {
-        System.out.println(this.listaDeGastos);
         for (ItemTransacao itemTransacao : this.listaDeGastos) {
             System.out.println(
                     "ID/INDEX: " + itemTransacao.idTransacao + "-" + this.listaDeGastos.indexOf(itemTransacao) + ";");

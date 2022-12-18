@@ -17,6 +17,9 @@ excluir valores
 gerar gráficos de gastos
 integrar campos no site. 
 https://fabiofsjunior.github.io/gestorfinanceiro/
+
+Plano de Contas = "Tags : Receitas/Despesas / Crédito"
+
 */
 
 public class GestorFinanceiro {
@@ -50,6 +53,12 @@ public class GestorFinanceiro {
 
         listaTagAlimentacao.listarPorTags(planilhaDezembro.getListaDeGastos());
         listaTagAlimentacao.mostrarGastos();
+
+        JOptionPane.showMessageDialog(null,
+        "Total de gastos no mês de Dezembro foi de: R$ " + listaTagAlimentacao.totalGasto);
+        
+
+
         
     }
 }
