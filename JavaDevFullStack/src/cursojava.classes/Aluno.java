@@ -4,24 +4,12 @@ import java.util.List;
 public class Aluno extends Pessoa {
 
     List<Disciplina> disciplinas = new ArrayList<Disciplina>();
-
-    public void setDisciplinas(List<Disciplina> disciplinas) {
-        this.disciplinas = disciplinas;
-    }
-
-    public List<Disciplina> getDisciplinas() {
-        return disciplinas;
-    }
+    String dataMatricula;
+    String nomeEscola;
+    String serieMatriculado;
 
     public Aluno() {
 
-    }
-
-    @Override
-    public String toString() {
-        return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
-                + registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", dataMatricula="
-                + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado=" + serieMatriculado + "]";
     }
 
     // Calcula a média do aluno
@@ -56,5 +44,45 @@ public class Aluno extends Pessoa {
             return "Aluno reprovado!";
         }
     }
+
+    public List<Disciplina> getDisciplinas() {
+        return disciplinas;
+    }
+
+    public void setDisciplinas(List<Disciplina> disciplinas) {
+        this.disciplinas = disciplinas;
+    }
+
+    public String getDataMatricula() {
+        return dataMatricula;
+    }
+
+    public void setDataMatricula(String dataMatricula) {
+        this.dataMatricula = dataMatricula;
+    }
+
+    public String getNomeEscola() {
+        return nomeEscola;
+    }
+
+    public void setNomeEscola(String nomeEscola) {
+        this.nomeEscola = nomeEscola;
+    }
+
+    public String getSerieMatriculado() {
+        return serieMatriculado;
+    }
+
+    public void setSerieMatriculado(String serieMatriculado) {
+        this.serieMatriculado = serieMatriculado;
+    }
+
+    @Override
+    public String toString() {
+        return "Aluno [disciplinas=" + disciplinas + ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola
+                + ", serieMatriculado=" + serieMatriculado + "]";
+    }
+
+    
 
 }

@@ -1,5 +1,7 @@
 //Iniciando a prática e teórica de HERANÇA POO
 
+// Classe PAI
+
 public class Pessoa {
     protected String nome;
     protected int idade;
@@ -7,9 +9,6 @@ public class Pessoa {
     protected String registroGeral;
     protected String numeroCpf;
     protected String nomeMae;
-    protected String dataMatricula;
-    protected String nomeEscola;
-    protected String serieMatriculado;
 
     public String getNome() {
         return nome;
@@ -57,30 +56,6 @@ public class Pessoa {
 
     public void setNomeMae(String nomeMae) {
         this.nomeMae = nomeMae;
-    }
-
-    public String getDataMatricula() {
-        return dataMatricula;
-    }
-
-    public void setDataMatricula(String dataMatricula) {
-        this.dataMatricula = dataMatricula;
-    }
-
-    public String getNomeEscola() {
-        return nomeEscola;
-    }
-
-    public void setNomeEscola(String nomeEscola) {
-        this.nomeEscola = nomeEscola;
-    }
-
-    public String getSerieMatriculado() {
-        return serieMatriculado;
-    }
-
-    public void setSerieMatriculado(String serieMatriculado) {
-        this.serieMatriculado = serieMatriculado;
     }
 
 }
