@@ -25,40 +25,46 @@ Plano de Contas = "Tags : Receitas/Despesas / Crédito"
 public class GestorFinanceiro {
     public static void main(String[] args) {
 
-        PlanilhaGastos planilhaDezembro = new PlanilhaGastos();
+        String senha = JOptionPane.showInputDialog("Informe o Login! ");
+        String login = JOptionPane.showInputDialog("Informe o Senha! ");
 
-        // PlanilhaGastos listaPorTags = new PlanilhaGastos();
-        PlanilhaGastos listaTagAlimentacao = new PlanilhaGastos(); // TAG == 1
-        listaTagAlimentacao.listNome = "Tag Alimentação";
-        PlanilhaGastos listaTagTransporte = new PlanilhaGastos(); // TAG == 2
-        PlanilhaGastos listaTagSaude = new PlanilhaGastos(); // TAG == 3
-        PlanilhaGastos listaTagLazer = new PlanilhaGastos(); // TAG == 4
-        PlanilhaGastos listaTagRoupas = new PlanilhaGastos(); // TAG == 5
-        PlanilhaGastos listaTagOutros = new PlanilhaGastos(); // TAG == 6
+        if (login.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")) {
 
-        // PlanilhaGastos listaPorFormaPagamento = new PlanilhaGastos();
-        PlanilhaGastos listaPagDinheiro = new PlanilhaGastos(); // TAG == 1
-        PlanilhaGastos listaPagCredito = new PlanilhaGastos(); // TAG == 2
-        PlanilhaGastos listaPagDebito = new PlanilhaGastos(); // TAG == 3
-        PlanilhaGastos listaPagPix = new PlanilhaGastos(); // TAG == 4
+            PlanilhaGastos planilhaDezembro = new PlanilhaGastos();
 
-        JOptionPane.showMessageDialog(null, "Gestor de Gastos Pessoais v1.0");
-        planilhaDezembro.adicionarTransacao();
-        planilhaDezembro.continuarAddTransacao();
+            // PlanilhaGastos listaPorTags = new PlanilhaGastos();
+            PlanilhaGastos listaTagAlimentacao = new PlanilhaGastos(); // TAG == 1
+            listaTagAlimentacao.listNome = "Tag Alimentação";
+            PlanilhaGastos listaTagTransporte = new PlanilhaGastos(); // TAG == 2
+            PlanilhaGastos listaTagSaude = new PlanilhaGastos(); // TAG == 3
+            PlanilhaGastos listaTagLazer = new PlanilhaGastos(); // TAG == 4
+            PlanilhaGastos listaTagRoupas = new PlanilhaGastos(); // TAG == 5
+            PlanilhaGastos listaTagOutros = new PlanilhaGastos(); // TAG == 6
 
-        planilhaDezembro.mostrarGastos();
+            // PlanilhaGastos listaPorFormaPagamento = new PlanilhaGastos();
+            PlanilhaGastos listaPagDinheiro = new PlanilhaGastos(); // TAG == 1
+            PlanilhaGastos listaPagCredito = new PlanilhaGastos(); // TAG == 2
+            PlanilhaGastos listaPagDebito = new PlanilhaGastos(); // TAG == 3
+            PlanilhaGastos listaPagPix = new PlanilhaGastos(); // TAG == 4
 
-        JOptionPane.showMessageDialog(null,
-                "Total de gastos no mês de Dezembro foi de: R$ " + planilhaDezembro.totalGasto);
+            // Posso realizar essas listagens com HASHMAPS()
 
-        listaTagAlimentacao.listarPorTags(planilhaDezembro.getListaDeGastos());
-        listaTagAlimentacao.mostrarGastos();
+            JOptionPane.showMessageDialog(null, "Gestor de Gastos Pessoais v1.0");
+            planilhaDezembro.adicionarTransacao();
+            planilhaDezembro.continuarAddTransacao();
 
-        JOptionPane.showMessageDialog(null,
-        "Total de gastos no mês de Dezembro foi de: R$ " + listaTagAlimentacao.totalGasto);
-        
+            planilhaDezembro.mostrarGastos();
 
+            JOptionPane.showMessageDialog(null,
+                    "Total de gastos no mês de Dezembro foi de: R$ " + planilhaDezembro.totalGasto);
 
-        
+            listaTagAlimentacao.listarPorTags(planilhaDezembro.getListaDeGastos());
+            listaTagAlimentacao.mostrarGastos();
+
+            JOptionPane.showMessageDialog(null,
+                    "Total de gastos no mês de Dezembro foi de: R$ " + listaTagAlimentacao.totalGasto);
+
+        }
+
     }
 }

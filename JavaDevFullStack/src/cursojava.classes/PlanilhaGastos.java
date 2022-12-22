@@ -81,19 +81,24 @@ public class PlanilhaGastos {
                     somarGastos(itemTransacao.getValorTransacao());
                     break;
                 case "2":
-                    System.out.println("TAG: Transporte;");
+                    this.listaDeGastos.add(itemTransacao);
+                    somarGastos(itemTransacao.getValorTransacao());
                     break;
                 case "3":
-                    System.out.println("TAG: Saúde;");
+                    this.listaDeGastos.add(itemTransacao);
+                    somarGastos(itemTransacao.getValorTransacao());
                     break;
                 case "4":
-                    System.out.println("TAG: Lazer;");
+                    this.listaDeGastos.add(itemTransacao);
+                    somarGastos(itemTransacao.getValorTransacao());
                     break;
                 case "5":
-                    System.out.println("TAG: Roupa/Calçado;");
+                    this.listaDeGastos.add(itemTransacao);
+                    somarGastos(itemTransacao.getValorTransacao());
                     break;
                 case "6":
-                    System.out.println("TAG: Outros;");
+                    this.listaDeGastos.add(itemTransacao);
+                    somarGastos(itemTransacao.getValorTransacao());
                     break;
             }
 
@@ -145,12 +150,10 @@ public class PlanilhaGastos {
                     System.out.println("FORMA DE PAGAMENTO: Pix;");
                     break;
             }
-            System.out.println("================================================================");
         }
+        System.out.println("================================================================");
 
     }
-
-    
 
     public List<ItemTransacao> getListaDeGastos() {
         return listaDeGastos;
@@ -217,7 +220,5 @@ public class PlanilhaGastos {
             return false;
         return true;
     }
-
-    
 
 }
