@@ -2,13 +2,18 @@
 
 // Classe PAI
 
-public class Pessoa {
+public abstract class Pessoa {
     protected String nome;
     protected int idade;
     protected String dataNascimento;
     protected String registroGeral;
     protected String numeroCpf;
     protected String nomeMae;
+
+
+    public abstract double salario();
+        
+    
 
     public String getNome() {
         return nome;

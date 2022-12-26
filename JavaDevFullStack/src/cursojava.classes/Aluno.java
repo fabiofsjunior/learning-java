@@ -83,6 +83,11 @@ public class Aluno extends Pessoa {
                 + ", serieMatriculado=" + serieMatriculado + "]";
     }
 
+    @Override
+    public double salario() {
+        return 1500.00;
+    }
+
     
 
 }

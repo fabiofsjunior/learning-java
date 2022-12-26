@@ -8,7 +8,25 @@ public class TestandoClassesFilhas {
         diretor.setNome("Steven Spielberg");
 
         Secretario secretario = new Secretario();
-        secretario.setNome("Jack Black");;
+        secretario.setNome("Jack Black");
 
+
+
+        System.out.println("Salário Aluno é: "+ aluno.salario());
+        System.out.println("Salário Diretor é: "+ diretor.salario());
+        System.out.println("Salário Secretário é: "+ secretario.salario());
+
+        Pessoa pessoa = new Aluno();
+
+        teste(aluno);
+        teste(diretor);
+        teste(secretario);
+
+        
+    }
+
+    public static void teste(Pessoa pessoa){
+        System.out.println("Esta pessoa é demais = "
+        + pessoa.getNome() + "e o salário é de = R$" + pessoa.salario());
     }
 }

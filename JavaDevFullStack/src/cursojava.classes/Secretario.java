@@ -28,4 +28,9 @@ public class Secretario extends Pessoa {
         this.experiencia = experiencia;
     }
 
+    @Override
+    public double salario() {
+        return 3000.00 * 0.9;
+    }
+
 }

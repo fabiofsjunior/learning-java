@@ -28,4 +28,10 @@ public class Diretor extends Pessoa {
         this.titulacao = titulacao;
     }
 
+    @Override
+    public double salario() {
+        return 5000.00 * 0.90;
+    }
+
+    
 }
