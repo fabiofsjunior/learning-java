@@ -1,4 +1,9 @@
+package cursojava.executavel;
+
 import javax.swing.JOptionPane;
+
+import cursojava.classes.Aluno;
+import cursojava.classes.Disciplina;
 
 public class PrimeiraClasse {
     public static void main(String[] args) {

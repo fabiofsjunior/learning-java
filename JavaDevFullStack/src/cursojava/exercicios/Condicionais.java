@@ -1,3 +1,5 @@
+package cursojava.exercicios;
+
 public class Condicionais {
     public static void main(String[] args) throws Exception {
         // calculando nota do semestre

@@ -1,3 +1,5 @@
+package cursojava.exercicios;
+
 import java.util.Random;
 
 public class LacoRepeticao {

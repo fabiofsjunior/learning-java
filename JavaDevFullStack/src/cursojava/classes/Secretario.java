@@ -1,4 +1,8 @@
-public class Secretario extends Pessoa {
+package cursojava.classes;
+
+import cursojava.interfaces.PermitirAcesso;
+
+public class Secretario extends Pessoa implements PermitirAcesso {
 
     private String registro;
     private String nivelCargo;
@@ -31,6 +35,12 @@ public class Secretario extends Pessoa {
     @Override
     public double salario() {
         return 3000.00 * 0.9;
+    }
+
+    @Override
+    public boolean autenticar() {
+        // TODO Auto-generated method stub
+        return false;
     }
 
 }

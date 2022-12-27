@@ -1,3 +1,5 @@
+package cursojava.exercicios;
+
 public class OperadorTernario {
     public static void main(String[] args) {
         // São usados para micro validações

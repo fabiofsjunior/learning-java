@@ -1,3 +1,5 @@
+package cursojava.classes;
+
 import java.util.UUID;
 
 public class ItemTransacao {

@@ -1,3 +1,5 @@
+package cursojava.exercicios;
+
 import javax.swing.JOptionPane;
 
 public class Calculando {

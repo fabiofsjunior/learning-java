@@ -1,3 +1,5 @@
+package cursojava.classes;
+
 //Iniciando a prática e teórica de HERANÇA POO
 
 // Classe PAI

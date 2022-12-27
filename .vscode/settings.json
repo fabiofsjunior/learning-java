@@ -1,7 +1,5 @@
 {
     "java.project.sourcePaths": [
-        "JavaDevFullStack\\src\\cursojava.executavel",
-        "JavaDevFullStack\\src\\cursojava.classes",
-        "JavaDevFullStack\\src\\cursojava.exercicios"
+        "JavaDevFullStack\\src"
     ]
 }

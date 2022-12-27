@@ -1,3 +1,5 @@
+package cursojava.classes;
+
 public class Disciplina {
 //Esta classe disciplina, servirá para todos objetos e instâncias de notas e matérias.
     double nota;

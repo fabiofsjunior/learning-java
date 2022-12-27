@@ -1,4 +1,8 @@
+package cursojava.executavel;
+
 import javax.swing.JOptionPane;
+
+import cursojava.classes.PlanilhaGastos;
 
 /* [Forma mais simples]
 Iniciar o programa: 
@@ -34,7 +38,7 @@ public class GestorFinanceiro {
 
             // PlanilhaGastos listaPorTags = new PlanilhaGastos();
             PlanilhaGastos listaTagAlimentacao = new PlanilhaGastos(); // TAG == 1
-            listaTagAlimentacao.listNome = "Tag Alimentação";
+            listaTagAlimentacao.setListNome("Tag Alimentação");
             PlanilhaGastos listaTagTransporte = new PlanilhaGastos(); // TAG == 2
             PlanilhaGastos listaTagSaude = new PlanilhaGastos(); // TAG == 3
             PlanilhaGastos listaTagLazer = new PlanilhaGastos(); // TAG == 4
@@ -56,13 +60,13 @@ public class GestorFinanceiro {
             planilhaDezembro.mostrarGastos();
 
             JOptionPane.showMessageDialog(null,
-                    "Total de gastos no mês de Dezembro foi de: R$ " + planilhaDezembro.totalGasto);
+                    "Total de gastos no mês de Dezembro foi de: R$ " + planilhaDezembro.getTotalGasto());
 
             listaTagAlimentacao.listarPorTags(planilhaDezembro.getListaDeGastos());
             listaTagAlimentacao.mostrarGastos();
 
             JOptionPane.showMessageDialog(null,
-                    "Total de gastos no mês de Dezembro foi de: R$ " + listaTagAlimentacao.totalGasto);
+                    "Total de gastos no mês de Dezembro foi de: R$ " + listaTagAlimentacao.getTotalGasto());
 
         }
 

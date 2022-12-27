@@ -1,3 +1,5 @@
+package cursojava.exercicios;
+
 public class HackerRankOddEven {
     public static void main(String[] args) {
 

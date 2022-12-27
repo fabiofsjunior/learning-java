@@ -1,3 +1,5 @@
+package cursojava.classes;
+
 public class Diretor extends Pessoa {
 
     private String registroEducacao;
