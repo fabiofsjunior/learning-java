@@ -6,19 +6,15 @@ import javax.swing.JOptionPane;
 import cursojava.classes.Aluno;
 import cursojava.classes.Disciplina;
 import cursojava.classes.Secretario;
+import cursojava.interfaces.PermitirAcesso;
 
 public class PrimeiraClasse {
     public static void main(String[] args) {
 
         String login = JOptionPane.showInputDialog("Informe o login:");
         String senha = JOptionPane.showInputDialog("Informe a senha:");
-        Secretario secretario = new Secretario();
-        secretario.setLogin(login);
-        secretario.setSenha(senha);
 
-       
-
-        if (secretario.autenticar()) {
+        if (new Secretario().autenticar(login, senha)) {
 
             // Agora temos um objeto real namemória e 'Aluno1' é referência ao Objeto Aluno.
             Aluno aluno1 = new Aluno(); // Ex.: João
@@ -120,7 +116,7 @@ public class PrimeiraClasse {
 
             // Saída de dados de forma simplificada metodo 'toString'.
             System.out.println(aluno1.toString()); // Descrição do objeto na memória.
-        }else{
+        } else {
             JOptionPane.showMessageDialog(null, "Acesso negado!");
         }
     }
