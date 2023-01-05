@@ -68,6 +68,8 @@ public class GestorFinanceiro {
             JOptionPane.showMessageDialog(null,
                     "Total de gastos no mês de Dezembro foi de: R$ " + listaTagAlimentacao.getTotalGasto());
 
+        }else{
+            JOptionPane.showMessageDialog(null, "Login ou Senha Inválidos.");
         }
 
     }
