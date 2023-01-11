@@ -39,36 +39,38 @@ public class GestorFinanceiro {
             // PlanilhaGastos listaPorTags = new PlanilhaGastos();
             PlanilhaGastos listaTagAlimentacao = new PlanilhaGastos(); // TAG == 1
             listaTagAlimentacao.setListNome("Tag Alimentação");
-            PlanilhaGastos listaTagTransporte = new PlanilhaGastos(); // TAG == 2
-            PlanilhaGastos listaTagSaude = new PlanilhaGastos(); // TAG == 3
-            PlanilhaGastos listaTagLazer = new PlanilhaGastos(); // TAG == 4
-            PlanilhaGastos listaTagRoupas = new PlanilhaGastos(); // TAG == 5
-            PlanilhaGastos listaTagOutros = new PlanilhaGastos(); // TAG == 6
+            // PlanilhaGastos listaTagTransporte = new PlanilhaGastos(); // TAG == 2
+            // PlanilhaGastos listaTagSaude = new PlanilhaGastos(); // TAG == 3
+            // PlanilhaGastos listaTagLazer = new PlanilhaGastos(); // TAG == 4
+            // PlanilhaGastos listaTagRoupas = new PlanilhaGastos(); // TAG == 5
+            // PlanilhaGastos listaTagOutros = new PlanilhaGastos(); // TAG == 6
 
             // PlanilhaGastos listaPorFormaPagamento = new PlanilhaGastos();
-            PlanilhaGastos listaPagDinheiro = new PlanilhaGastos(); // TAG == 1
-            PlanilhaGastos listaPagCredito = new PlanilhaGastos(); // TAG == 2
-            PlanilhaGastos listaPagDebito = new PlanilhaGastos(); // TAG == 3
-            PlanilhaGastos listaPagPix = new PlanilhaGastos(); // TAG == 4
+            // PlanilhaGastos listaPagDinheiro = new PlanilhaGastos(); // TAG == 1
+            // PlanilhaGastos listaPagCredito = new PlanilhaGastos(); // TAG == 2
+            // PlanilhaGastos listaPagDebito = new PlanilhaGastos(); // TAG == 3
+            // PlanilhaGastos listaPagPix = new PlanilhaGastos(); // TAG == 4
 
             // Posso realizar essas listagens com HASHMAPS()
 
             JOptionPane.showMessageDialog(null, "Gestor de Gastos Pessoais v1.0");
             planilhaDezembro.adicionarTransacao();
             planilhaDezembro.continuarAddTransacao();
-
             planilhaDezembro.mostrarGastos();
 
             JOptionPane.showMessageDialog(null,
                     "Total de gastos no mês de Dezembro foi de: R$ " + planilhaDezembro.getTotalGasto());
+            System.out.println("Total de gastos no mês de Dezembro foi de: R$ " + planilhaDezembro.getTotalGasto());
 
-            listaTagAlimentacao.listarPorTags(planilhaDezembro.getListaDeGastos());
-            listaTagAlimentacao.mostrarGastos();
+
+            
+            //listaTagAlimentacao.listarPorTags(planilhaDezembro.getListaDeGastos());
+            // listaTagAlimentacao.mostrarGastos();
 
             JOptionPane.showMessageDialog(null,
                     "Total de gastos no mês de Dezembro foi de: R$ " + listaTagAlimentacao.getTotalGasto());
 
-        }else{
+        } else {
             JOptionPane.showMessageDialog(null, "Login ou Senha Inválidos.");
         }
 

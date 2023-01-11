@@ -1,6 +1,7 @@
 package cursojava.classes;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.swing.JOptionPane;
@@ -38,22 +39,31 @@ public class PlanilhaGastos {
     public void adicionarTransacao() {
         ItemTransacao controleGastos = new ItemTransacao(null, null, totalGasto, null, null, null);
 
-        controleGastos.valorTransacao = Double
-                .parseDouble(JOptionPane.showInputDialog("Digite o valor gasto \n[Ex.: 12.55]: "));
-        controleGastos.nomeTransacao = JOptionPane
-                .showInputDialog("Digite uma descrição para o gasto \n[Ex.: Crédito Celular.]: ");
-        controleGastos.tagTransacao = JOptionPane
-                .showInputDialog(
-                        "Digite uma TAG: \n[1 = Alimentação], \n[2 = Transporte], \n[3 = Saúde], \n[4 = Lazer], \n[5 = Roupa/Calçado], \n[6 = outros]");
-        //controleGastos.dataCompraTransacao = JOptionPane.showInputDialog("Digite a DATA do gasto [ex.: dd/mm/yy]: ");
-        controleGastos.formaPagamentoTransacao = JOptionPane
-                .showInputDialog(
-                        "Digite uma Forma de Pagamento: \n[1 = Dinheiro], \n[2 = Crédito], \n[3 = Débito], \n[4 = Pix]");
+        try {
+            
 
-        this.listaDeGastos.add(controleGastos);
+            controleGastos.valorTransacao = Double
+                    .parseDouble(JOptionPane.showInputDialog("Digite o valor gasto \n[Ex.: 12.55]: "));
+            controleGastos.nomeTransacao = JOptionPane
+                    .showInputDialog("Digite uma descrição para o gasto \n[Ex.: Crédito Celular.]: ");
+            controleGastos.tagTransacao = JOptionPane
+                    .showInputDialog(
+                            "Digite uma TAG: \n[1 = Alimentação], \n[2 = Transporte], \n[3 = Saúde], \n[4 = Lazer], \n[5 = Roupa/Calçado], \n[6 = outros]");
+            // controleGastos.dataCompraTransacao = JOptionPane.showInputDialog("Digite a
+            // DATA do gasto [ex.: dd/mm/yy]: ");
+            controleGastos.formaPagamentoTransacao = JOptionPane
+                    .showInputDialog(
+                            "Digite uma Forma de Pagamento: \n[1 = Dinheiro], \n[2 = Crédito], \n[3 = Débito], \n[4 = Pix]");
+            this.listaDeGastos.add(controleGastos);
 
         // chamada para adicionar o valor ao gasto total.
         somarGastos(controleGastos.valorTransacao);
+        } catch (NullPointerException e) {
+            removerTransacao(controleGastos);
+            e.printStackTrace();
+        }
+
+        
 
     }
 
@@ -66,10 +76,21 @@ public class PlanilhaGastos {
         int resposta;
         resposta = JOptionPane.showConfirmDialog(null, "Quer adicionar mais alguma transação?", null, 0);
 
-        if (resposta == 0) {
-            adicionarTransacao();
-            continuarAddTransacao();
+        try {
+            if (resposta == 0) {
+                adicionarTransacao();
+                continuarAddTransacao();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
+    }
+
+    public void removerTransacao(ItemTransacao itemTransacao){
+        
+        int indexToRemove = (this.listaDeGastos.size());
+        listaDeGastos.remove(indexToRemove);
     }
 
     public void listarPorTags(List<ItemTransacao> listaDeGastos) {
@@ -113,44 +134,62 @@ public class PlanilhaGastos {
                     "ID/INDEX: " + itemTransacao.idTransacao + "-" + this.listaDeGastos.indexOf(itemTransacao) + ";");
             System.out.println("NOME: " + itemTransacao.nomeTransacao + ";");
             System.out.println("VALOR: R$" + itemTransacao.valorTransacao + ";");
-            switch (itemTransacao.tagTransacao) {
 
-                case "1":
-                    System.out.println("TAG: Alimentação;");
-                    break;
-                case "2":
-                    System.out.println("TAG: Transporte;");
-                    break;
-                case "3":
-                    System.out.println("TAG: Saúde;");
-                    break;
-                case "4":
-                    System.out.println("TAG: Lazer;");
-                    break;
-                case "5":
-                    System.out.println("TAG: Roupa/Calçado;");
-                    break;
-                case "6":
+            try {
+
+                switch (itemTransacao.tagTransacao) {
+
+                    case "1":
+                        System.out.println("TAG: Alimentação;");
+                        break;
+                    case "2":
+                        System.out.println("TAG: Transporte;");
+                        break;
+                    case "3":
+                        System.out.println("TAG: Saúde;");
+                        break;
+                    case "4":
+                        System.out.println("TAG: Lazer;");
+                        break;
+                    case "5":
+                        System.out.println("TAG: Roupa/Calçado;");
+                        break;
+                    case "6":
+                        System.out.println("TAG: Outros;");
+                        break;
+                }
+            } catch (NullPointerException e) {
+                if (itemTransacao.tagTransacao == null) {
                     System.out.println("TAG: Outros;");
-                    break;
+                }
+
             }
 
             System.out.println("DATA: " + itemTransacao.dataCompraTransacao + ";");
 
-            switch (itemTransacao.formaPagamentoTransacao) {
+            try {
 
-                case "1":
-                    System.out.println("FORMA DE PAGAMENTO: Dinheiro;");
-                    break;
-                case "2":
-                    System.out.println("FORMA DE PAGAMENTO: Crédito;");
-                    break;
-                case "3":
-                    System.out.println("FORMA DE PAGAMENTO: Débito;");
-                    break;
-                case "4":
-                    System.out.println("FORMA DE PAGAMENTO: Pix;");
-                    break;
+                switch (itemTransacao.formaPagamentoTransacao) {
+
+                    case "1":
+                        System.out.println("FORMA DE PAGAMENTO: Dinheiro;");
+                        break;
+                    case "2":
+                        System.out.println("FORMA DE PAGAMENTO: Crédito;");
+                        break;
+                    case "3":
+                        System.out.println("FORMA DE PAGAMENTO: Débito;");
+                        break;
+                    case "4":
+                        System.out.println("FORMA DE PAGAMENTO: Pix;");
+                        break;
+                }
+            } catch (NullPointerException e) {
+                if (itemTransacao.formaPagamentoTransacao == null) {
+                    itemTransacao.formaPagamentoTransacao = "1";
+                    System.out.println("FORMA DE PAGAMENTO: Não Especificado/Considerado em Dinheiro;");
+                }
+                e.printStackTrace();
             }
         }
         System.out.println("================================================================");
