@@ -1,7 +1,6 @@
 package cursojava.classes;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import javax.swing.JOptionPane;
@@ -24,8 +23,16 @@ public class PlanilhaGastos {
     List<ItemTransacao> listaDeGastos = new ArrayList<>();
     String listNome;
     double totalGasto;
+    String listaTagList;
+    String listaFormaPagamento;
 
     public PlanilhaGastos() {
+
+    }
+
+    public PlanilhaGastos(String listaTagList, String listaFormaPagamento) {
+        this.listaTagList = listaTagList;
+        this.listaFormaPagamento = listaFormaPagamento;
 
     }
 
@@ -35,12 +42,11 @@ public class PlanilhaGastos {
         this.totalGasto = totalGasto;
     }
 
-    // Metodo cria um objeto e adiciona a lista de gastos, com inputs pelo usuário.
+    // Método cria um objeto e adiciona a lista de gastos, com inputs pelo usuário.
     public void adicionarTransacao() {
         ItemTransacao controleGastos = new ItemTransacao(null, null, totalGasto, null, null, null);
 
         try {
-            
 
             controleGastos.valorTransacao = Double
                     .parseDouble(JOptionPane.showInputDialog("Digite o valor gasto \n[Ex.: 12.55]: "));
@@ -48,22 +54,23 @@ public class PlanilhaGastos {
                     .showInputDialog("Digite uma descrição para o gasto \n[Ex.: Crédito Celular.]: ");
             controleGastos.tagTransacao = JOptionPane
                     .showInputDialog(
-                            "Digite uma TAG: \n[1 = Alimentação], \n[2 = Transporte], \n[3 = Saúde], \n[4 = Lazer], \n[5 = Roupa/Calçado], \n[6 = outros]");
+                            "Digite uma TAG: \n[1 = Alimentação], \n[2 = Transporte], \n[3 = Saúde], \n[4 = Lazer], \n[5 = Roupa/Calçado], \n[6 = Outros]");
             // controleGastos.dataCompraTransacao = JOptionPane.showInputDialog("Digite a
             // DATA do gasto [ex.: dd/mm/yy]: ");
             controleGastos.formaPagamentoTransacao = JOptionPane
                     .showInputDialog(
                             "Digite uma Forma de Pagamento: \n[1 = Dinheiro], \n[2 = Crédito], \n[3 = Débito], \n[4 = Pix]");
+
             this.listaDeGastos.add(controleGastos);
 
-        // chamada para adicionar o valor ao gasto total.
-        somarGastos(controleGastos.valorTransacao);
-        } catch (NullPointerException e) {
-            removerTransacao(controleGastos);
-            e.printStackTrace();
-        }
+            // chamada para adicionar o valor ao gasto total.
+            somarGastos(controleGastos.valorTransacao);
 
-        
+        } catch (NullPointerException e) {
+            this.listaDeGastos.add(controleGastos);
+            removerTransacao(controleGastos);
+            //e.printStackTrace();
+        }
 
     }
 
@@ -87,9 +94,9 @@ public class PlanilhaGastos {
 
     }
 
-    public void removerTransacao(ItemTransacao itemTransacao){
-        
-        int indexToRemove = (this.listaDeGastos.size());
+    public void removerTransacao(ItemTransacao itemTransacao) {
+
+        int indexToRemove = (this.listaDeGastos.size() - 1);
         listaDeGastos.remove(indexToRemove);
     }
 
@@ -97,38 +104,27 @@ public class PlanilhaGastos {
 
         for (ItemTransacao itemTransacao : listaDeGastos) {
 
-            switch (itemTransacao.getTagTransacao()) {
-
-                case "1":
-                    this.listaDeGastos.add(itemTransacao);
-                    somarGastos(itemTransacao.getValorTransacao());
-                    break;
-                case "2":
-                    this.listaDeGastos.add(itemTransacao);
-                    somarGastos(itemTransacao.getValorTransacao());
-                    break;
-                case "3":
-                    this.listaDeGastos.add(itemTransacao);
-                    somarGastos(itemTransacao.getValorTransacao());
-                    break;
-                case "4":
-                    this.listaDeGastos.add(itemTransacao);
-                    somarGastos(itemTransacao.getValorTransacao());
-                    break;
-                case "5":
-                    this.listaDeGastos.add(itemTransacao);
-                    somarGastos(itemTransacao.getValorTransacao());
-                    break;
-                case "6":
-                    this.listaDeGastos.add(itemTransacao);
-                    somarGastos(itemTransacao.getValorTransacao());
-                    break;
+            if (itemTransacao.getTagTransacao().equals(this.getListaTagList())) {
+                this.listaDeGastos.add(itemTransacao);
+                somarGastos(itemTransacao.getValorTransacao());
             }
+        }
+    }
 
+    public void listarPorTipoPagamento(List<ItemTransacao> listaDeGastos) {
+
+        for (ItemTransacao itemTransacao : listaDeGastos) {
+
+            if (itemTransacao.getFormaPagamentoTransacao().equals(this.getListaFormaPagamento())) {
+                this.listaDeGastos.add(itemTransacao);
+                somarGastos(itemTransacao.getValorTransacao());
+            }
         }
     }
 
     public void mostrarGastos() {
+        System.out.println(this.listNome);
+
         for (ItemTransacao itemTransacao : this.listaDeGastos) {
             System.out.println(
                     "ID/INDEX: " + itemTransacao.idTransacao + "-" + this.listaDeGastos.indexOf(itemTransacao) + ";");
@@ -191,8 +187,13 @@ public class PlanilhaGastos {
                 }
                 e.printStackTrace();
             }
+            System.out.println("-----------------------------");
+
         }
-        System.out.println("================================================================");
+        System.out.println("_______________________________________________________");
+        System.out.println("Total de gastos no mês foi de: R$ " + this.totalGasto);
+        System.out.println("_______________________________________________________");
+        JOptionPane.showMessageDialog(null, "Total de gastos no mês com "+this.listNome+" foi de: R$ " + this.totalGasto);
 
     }
 
@@ -220,10 +221,26 @@ public class PlanilhaGastos {
         this.totalGasto = totalGasto;
     }
 
+    public String getListaTagList() {
+        return listaTagList;
+    }
+
+    public void setListaTagList(String listaTagList) {
+        this.listaTagList = listaTagList;
+    }
+
+    public String getListaFormaPagamento() {
+        return listaFormaPagamento;
+    }
+
+    public void setListaFormaPagamento(String listaFormaPagamento) {
+        this.listaFormaPagamento = listaFormaPagamento;
+    }
+
     @Override
     public String toString() {
         return "PlanilhaGastos [listaDeGastos=" + listaDeGastos + ", listNome=" + listNome + ", totalGasto="
-                + totalGasto + "]";
+                + totalGasto + ", listaTagList=" + listaTagList + ", listaFormaPagamento=" + listaFormaPagamento + "]";
     }
 
     @Override
@@ -235,6 +252,8 @@ public class PlanilhaGastos {
         long temp;
         temp = Double.doubleToLongBits(totalGasto);
         result = prime * result + (int) (temp ^ (temp >>> 32));
+        result = prime * result + ((listaTagList == null) ? 0 : listaTagList.hashCode());
+        result = prime * result + ((listaFormaPagamento == null) ? 0 : listaFormaPagamento.hashCode());
         return result;
     }
 
@@ -258,6 +277,16 @@ public class PlanilhaGastos {
         } else if (!listNome.equals(other.listNome))
             return false;
         if (Double.doubleToLongBits(totalGasto) != Double.doubleToLongBits(other.totalGasto))
+            return false;
+        if (listaTagList == null) {
+            if (other.listaTagList != null)
+                return false;
+        } else if (!listaTagList.equals(other.listaTagList))
+            return false;
+        if (listaFormaPagamento == null) {
+            if (other.listaFormaPagamento != null)
+                return false;
+        } else if (!listaFormaPagamento.equals(other.listaFormaPagamento))
             return false;
         return true;
     }
