@@ -30,12 +30,13 @@ public class PlanilhaGastos {
 
     }
 
+    //Construtor para listas secundárias (Tags e Forma de Pagamento)
     public PlanilhaGastos(String listaTagList, String listaFormaPagamento) {
         this.listaTagList = listaTagList;
         this.listaFormaPagamento = listaFormaPagamento;
 
     }
-
+    //Construtor para Lista Main (Planilha Mensal)
     public PlanilhaGastos(List<ItemTransacao> listaDeGastos, String listNome, double totalGasto) {
         this.listaDeGastos = listaDeGastos;
         this.listNome = listNome;
