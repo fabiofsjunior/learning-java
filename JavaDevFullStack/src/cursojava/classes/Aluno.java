@@ -18,7 +18,7 @@ public class Aluno extends Pessoa {
     public double getMediaNota() {
         double somaNotas = 0.0;
         for (Disciplina disciplina : disciplinas) {
-            somaNotas += disciplina.getNota();
+            somaNotas += disciplina.getMediaNotas();
         }
         return somaNotas / disciplinas.size();
 
@@ -89,7 +89,5 @@ public class Aluno extends Pessoa {
     public double salario() {
         return 1500.00;
     }
-
-    
 
 }

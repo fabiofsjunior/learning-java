@@ -44,5 +44,23 @@ public class arrayVetor {
             System.out.println("Nota na posição " + i + " é igual a: " + notas[i]);
         }
 
+
+        //Praticando
+
+        //criação do aluno
+        Aluno aluno = new Aluno();
+        aluno.setNome("Fábio");
+        aluno.setNomeEscola("JDevTreinamentos");
+
+        //criação da disciplina
+        Disciplina disciplina = new Disciplina();
+        disciplina.setDisciplina("Curso de Java");
+        double[] nota = {8, 7, 6, 9};
+        disciplina.setNota(nota);
+
+        aluno.getDisciplinas().add(disciplina);
+
+
+
     }
 }
