@@ -1,8 +1,11 @@
-package cursojava.classes;
+package cursojava.executavel;
 
 import javax.swing.JOptionPane;
 
-public class arrayVetor {
+import cursojava.classes.Aluno;
+import cursojava.classes.Disciplina;
+
+public class ArraysVetores {
 
     public static void main(String[] args) {
 
