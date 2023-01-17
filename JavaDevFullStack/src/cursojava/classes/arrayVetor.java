@@ -45,22 +45,53 @@ public class arrayVetor {
         }
 
 
-        //Praticando
+         //Praticando
 
         //criação do aluno
         Aluno aluno = new Aluno();
         aluno.setNome("Fábio");
         aluno.setNomeEscola("JDevTreinamentos");
 
-        //criação da disciplina
+        //criação da disciplina0
         Disciplina disciplina = new Disciplina();
         disciplina.setDisciplina("Curso de Java");
         double[] nota = {8, 7, 6, 9};
         disciplina.setNota(nota);
 
+        //criação da disciplina1
+        Disciplina disciplina1 = new Disciplina();
+        disciplina1.setDisciplina("Curso de Java");
+        double[] nota1 = {8.1, 7.2, 6.3, 9.4};
+        disciplina1.setNota(nota1);
+
         aluno.getDisciplinas().add(disciplina);
+        aluno.getDisciplinas().add(disciplina1);
 
 
+        System.out.println("Nome do aluno = " + aluno.getNome() + " inscrito no curso: " + aluno.getNomeEscola());
+        System.out.println("--------- Disciplina do aluno ---------");
+
+        for (Disciplina d : aluno.getDisciplinas()) {
+            System.out.println("Disciplina: " + d.getDisciplina());
+            System.out.println("A nota da disciplina são: ");
+
+            double notaMax = 0.0;
+
+            for (int posi = 0; posi < d.getNota().length; posi++ ){
+                System.out.println("Nota " + posi + " é igual  = " + d.getNota()[posi]);
+
+                //Descobrindo a maior nota com uma Variável Auxiliar.
+                if (posi == 0){
+                    notaMax = d.getNota()[posi];
+                }else{
+                    if (d.getNota()[posi] > notaMax){
+                        notaMax = d.getNota()[posi];
+                    }
+                }
+            }
+            System.out.println(" A maior nota da disciplina " + d.getDisciplina() + " é " + notaMax);
+            
+        }
 
     }
 }
