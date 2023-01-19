@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 import cursojava.classes.Aluno;
 import cursojava.classes.Disciplina;
 import cursojava.classes.Secretario;
-import cursojava.interfaces.PermitirAcesso;
+//import cursojava.interfaces.PermitirAcesso;
 
 public class PrimeiraClasse {
     public static void main(String[] args) {
@@ -39,7 +39,7 @@ public class PrimeiraClasse {
 
             for (int pos = 1; pos <= 4; pos++) {
                 String nomeDisciplina = JOptionPane.showInputDialog("Nome da disciplina " + pos + " ?");
-                String notaDisciplina = JOptionPane.showInputDialog("Nota da disciplina " + pos + " ?");
+                //String notaDisciplina = JOptionPane.showInputDialog("Nota da disciplina " + pos + " ?");
                 Disciplina disciplina = new Disciplina();
                 disciplina.setDisciplina(nomeDisciplina);
                 //disciplina.setNota(Double.valueOf(notaDisciplina));

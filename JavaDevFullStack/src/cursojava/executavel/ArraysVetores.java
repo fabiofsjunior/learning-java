@@ -11,7 +11,7 @@ public class ArraysVetores {
 
         // o Array sempre é necessário definir a quantidade de posições.
 
-        double[] valores = { 1.0, 2.0, 3.0 }; // Posso declarar diretamente os valores
+       // double[] valores = { 1.0, 2.0, 3.0 }; // Posso declarar diretamente os valores
 
         // Array de Strings
 
@@ -23,11 +23,11 @@ public class ArraysVetores {
         valoreStrings[3] = "contato@JdevTreinamento.com.br";
 
         // declarando diretamente.
-        String[] valoresDeclarados = {
+        /*String[] valoresDeclarados = {
                 "Fábio",
                 "10",
                 "Curso Java",
-                "81 9999-9999" };
+                "81 9999-9999" };*/
 
         // Solicita a quantidade de posições de forma dinâmica.
         String qtdPosicoes = JOptionPane.showInputDialog("Qual será o tamanho do array?");
