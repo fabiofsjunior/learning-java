@@ -2,7 +2,7 @@ package cursojava.thread;
 
 import javax.swing.JOptionPane;
 
-public class ThreadExercise {
+public class AulaThread {
     public static void main(String[] args) throws InterruptedException {
 
         // Thread do Envio de Nota Fiscal. THREAD NR 1
@@ -13,10 +13,6 @@ public class ThreadExercise {
         Thread threadEmail = new Thread(thread2);
         threadEmail.start();
 
-            
-
-
-         
         System.out.println("Chegou ao fim do código de teste de THREAD.");
 
         // Fluxo do sistema, cadastro de venda, uma emissão de nota fiscal, algo do
@@ -32,16 +28,16 @@ public class ThreadExercise {
             for (int pos = 0; pos <= 10; pos++) {
 
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 // Quero executar esse envio com tempo de parada ou com tempo determinado.
                 System.out.println("Executando alguma rotina, por exemplo envio de Nota Fiscal " + pos);
             }
-            
+
         }
-        
+
     };
     private static Runnable thread2 = new Runnable() {
 
@@ -51,15 +47,15 @@ public class ThreadExercise {
             for (int pos = 0; pos <= 10; pos++) {
 
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 // Quero executar esse envio com tempo de parada ou com tempo determinado.
                 System.out.println("Executando alguma rotina, por exemplo envio de E-mail " + pos);
             }
-            
+
         }
-        
+
     };
 }
