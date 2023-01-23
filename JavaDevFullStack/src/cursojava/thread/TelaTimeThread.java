@@ -117,7 +117,9 @@ public class TelaTimeThread extends JDialog {
                 threadTime1 = new Thread(thread1);
                 threadTime1.start();                
                 threadTime2 = new Thread(thread2);
-                threadTime2.start();                
+                threadTime2.start(); 
+                jButtonStart.setEnabled(false);               
+                jButtonStop.setEnabled(true);
             }
         });
 
@@ -127,9 +129,13 @@ public class TelaTimeThread extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 threadTime1.stop();
                 threadTime2.stop();
+                jButtonStart.setEnabled(true);
+                jButtonStop.setEnabled(false);
+
             }
 
         });
+        jButtonStop.setEnabled(false);
 
         add(jPanel, BorderLayout.WEST);
         // Método que torna a tela visível ao user. deve ser sempre a última linha do
