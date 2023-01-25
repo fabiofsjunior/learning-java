@@ -32,18 +32,18 @@ public class ImplementacaoFilaThread extends Thread {
                      * Gerar um envio em massa de Email;
                      */
                     System.out.println("-----------------------");
-                    System.out.println(processar.getEmail());
                     System.out.println(processar.getNome());
+                    System.out.println(processar.getEmail());
 
                     iteracao.remove();
 
                     try {
-                        Thread.sleep(1000); // Dar um tempo para descargar de memória.
+                        Thread.sleep(500); // Dar um tempo para descargar de memória.
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
                     try {
-                        Thread.sleep(1000); // Processou toda a lista dá um tempo para limpeza de memória.
+                        Thread.sleep(500); // Processou toda a lista dá um tempo para limpeza de memória.
                     } catch (Exception e) {
                         e.printStackTrace();
                     }

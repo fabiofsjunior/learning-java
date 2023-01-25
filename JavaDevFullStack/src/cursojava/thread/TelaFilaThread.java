@@ -30,8 +30,6 @@ public class TelaFilaThread extends JDialog {
 
     ImplementacaoFilaThread fila = new ImplementacaoFilaThread();
 
-    
-
     public TelaFilaThread() { // Executa o que tiver dentro no momento da abertura ou execução
         // Configurações Iniciais
         setTitle("Minha Tela de Timer com Threads");
@@ -74,24 +72,33 @@ public class TelaFilaThread extends JDialog {
         GridBagConstraints.gridx++;
         jPanel.add(jButtonStop, GridBagConstraints);
 
-        jButtonStart.addActionListener(new ActionListener(){
+        jButtonStart.addActionListener(new ActionListener() {
+
             @Override
             public void actionPerformed(ActionEvent e) {
-                ObjetoFilaThreads filaThread = new ObjetoFilaThreads();
-                filaThread.setNome(mostraTempo1.getText());
-                filaThread.setEmail(mostraTempo2.getText());
-                fila.add(filaThread);
-      
-            
+
+                if (fila == null) {
+                    fila = new ImplementacaoFilaThread();
+                    fila.start();
+                }
+                for (int qtd = 0; qtd <= 10; qtd++) {
+
+                    ObjetoFilaThreads filaThread = new ObjetoFilaThreads();
+                    filaThread.setNome(mostraTempo1.getText());
+                    filaThread.setEmail(mostraTempo2.getText() + " " + qtd);
+                    fila.add(filaThread);
+                }
+
             }
         });
 
-        jButtonStop.addActionListener(new ActionListener(){
+        jButtonStop.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-           
-              
+
+                fila.stop();
+                fila = null;
 
             }
 
