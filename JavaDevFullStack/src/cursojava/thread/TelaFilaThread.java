@@ -15,6 +15,13 @@ import javax.swing.JTextField;
 import javax.swing.plaf.DimensionUIResource;
 import javax.swing.plaf.InsetsUIResource;
 
+
+/*
+ * Preciso da tela e seus componentes
+ * em seguida preciso de um objeto com os dados a serem adicionados dentro da fila (ObjetoFilaThread.java)
+ * criar a fila e inserir o objeto dentro dela. (ImplementacaoFilaThread)
+ * 
+ */
 public class TelaFilaThread extends JDialog {
     // Componentes
     JPanel jPanel = new JPanel(new GridBagLayout());
@@ -28,7 +35,7 @@ public class TelaFilaThread extends JDialog {
     JButton jButtonStart = new JButton("Add Lista");
     JButton jButtonStop = new JButton("Stop");
 
-    ImplementacaoFilaThread fila = new ImplementacaoFilaThread();
+    ImplementacaoFilaThread fila = new ImplementacaoFilaThread(); //Necessário ja instanciar o objeto fila quando a tela estiver totalmente criada.
 
     public TelaFilaThread() { // Executa o que tiver dentro no momento da abertura ou execução
         // Configurações Iniciais
@@ -79,14 +86,15 @@ public class TelaFilaThread extends JDialog {
 
                 if (fila == null) {
                     fila = new ImplementacaoFilaThread();
-                    fila.start();
+                    fila.start(); //Implementar o método START quando ativar o botão.
                 }
                 for (int qtd = 0; qtd <= 10; qtd++) {
 
                     ObjetoFilaThreads filaThread = new ObjetoFilaThreads();
-                    filaThread.setNome(mostraTempo1.getText());
+                    //Captura o campo de texto
+                    filaThread.setNome(mostraTempo1.getText()); 
                     filaThread.setEmail(mostraTempo2.getText() + " " + qtd);
-                    fila.add(filaThread);
+                    fila.add(filaThread); // adiciona o objeto a pilha.
                 }
 
             }

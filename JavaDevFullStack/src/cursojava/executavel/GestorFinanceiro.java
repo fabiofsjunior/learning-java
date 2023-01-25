@@ -31,10 +31,12 @@ public class GestorFinanceiro {
 
         String senha = JOptionPane.showInputDialog("Informe o Login! ");
         String login = JOptionPane.showInputDialog("Informe o Senha! ");
+        PlanilhaGastos planilhaMensal = new PlanilhaGastos();
+        
 
-        if (login.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")) {
+        // if (login.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")) {
+        if (planilhaMensal.autenticar(login, senha) == true) {
 
-            PlanilhaGastos planilhaMensal = new PlanilhaGastos();
             planilhaMensal.setListNome("Lista De Gastos Mensal");
 
             PlanilhaGastos listaTagAlimentacao = new PlanilhaGastos(); // TAG == 1

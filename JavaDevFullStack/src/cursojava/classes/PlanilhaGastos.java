@@ -5,6 +5,8 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
+import cursojava.interfaces.PermitirAcesso;
+
 /*
 Uma lista de gastos pessoais pode conter vários atributos, dependendo do objetivo da lista e da pessoa que a criou. Alguns possíveis atributos que poderiam estar incluídos em uma lista de gastos pessoais são:
 
@@ -16,7 +18,7 @@ Uma lista de gastos pessoais pode conter vários atributos, dependendo do objeti
 Esses são apenas alguns exemplos de atributos que poderiam estar incluídos em uma lista de gastos pessoais. A lista pode conter outros atributos além desses, dependendo das necessidades e preferências da pessoa que a criou.
  */
 
-public class PlanilhaGastos {
+public class PlanilhaGastos implements PermitirAcesso{
 
     // ATRIBUTOS
 
@@ -290,6 +292,11 @@ public class PlanilhaGastos {
         } else if (!listaFormaPagamento.equals(other.listaFormaPagamento))
             return false;
         return true;
+    }
+
+    @Override
+    public boolean autenticar(String login, String senha) {
+        return login.equals("admin") && senha.equals("admin");
     }
 
 }
