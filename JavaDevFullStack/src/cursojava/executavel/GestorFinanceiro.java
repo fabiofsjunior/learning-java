@@ -33,8 +33,7 @@ public class GestorFinanceiro {
         String login = JOptionPane.showInputDialog("Informe o Senha! ");
         PlanilhaGastos planilhaMensal = new PlanilhaGastos();
 
-        // if (login.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")) {
-        if (planilhaMensal.autenticar(login, senha) == true) {
+        if (planilhaMensal.autenticar(login, senha)) {
 
             planilhaMensal.setListNome("Lista De Gastos Mensal");
 

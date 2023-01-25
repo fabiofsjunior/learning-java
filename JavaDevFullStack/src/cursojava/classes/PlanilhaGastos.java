@@ -302,7 +302,7 @@ public class PlanilhaGastos implements PermitirAcesso {
 
     @Override
     public boolean autenticar(String login, String senha) {
-        return login.equals("admin") && senha.equals("admin");
+        return login.equals("admin") && senha.equalsIgnoreCase("admin");
     }
 
 }
