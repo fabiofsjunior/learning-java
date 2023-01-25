@@ -32,7 +32,6 @@ public class GestorFinanceiro {
         String senha = JOptionPane.showInputDialog("Informe o Login! ");
         String login = JOptionPane.showInputDialog("Informe o Senha! ");
         PlanilhaGastos planilhaMensal = new PlanilhaGastos();
-        
 
         // if (login.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")) {
         if (planilhaMensal.autenticar(login, senha) == true) {
@@ -91,37 +90,41 @@ public class GestorFinanceiro {
             planilhaMensal.continuarAddTransacao();
             planilhaMensal.mostrarGastos();
 
-            // Classificação da lista por Tags
+            // CLASSIFICAÇÃO DAS LISTAS POR TAGS
+            // se estiver preenchida Imprime no console com o metodo mostrarGastos().
+
             listaTagAlimentacao.listarPorTags(planilhaMensal.getListaDeGastos());
+            //listaTagAlimentacao.verificaSeListaVazia(listaTagAlimentacao);
             listaTagAlimentacao.mostrarGastos();
 
             listaTagLazer.listarPorTags(planilhaMensal.getListaDeGastos());
             listaTagLazer.mostrarGastos();
 
             listaTagSaude.listarPorTags(planilhaMensal.getListaDeGastos());
-            listaTagSaude.mostrarGastos();
+            listaTagSaude.mostrarGastos();;
 
             listaTagTransporte.listarPorTags(planilhaMensal.getListaDeGastos());
-            listaTagTransporte.mostrarGastos();
+            listaTagRoupas.mostrarGastos();
 
             listaTagRoupas.listarPorTags(planilhaMensal.getListaDeGastos());
-            listaTagRoupas.mostrarGastos();
+            listaTagTransporte.mostrarGastos();
 
             listaTagOutros.listarPorTags(planilhaMensal.getListaDeGastos());
             listaTagOutros.mostrarGastos();
 
+
             // Classificação das listas por Forma de Pagamento
-            listaPagDinheiro.listarPorTipoPagamento(planilhaMensal.getListaDeGastos());
-            listaPagDinheiro.mostrarGastos();
+            // listaPagDinheiro.listarPorTipoPagamento(planilhaMensal.getListaDeGastos());
+            // listaPagDinheiro.mostrarGastos();
 
-            listaPagCredito.listarPorTipoPagamento(planilhaMensal.getListaDeGastos());
-            listaPagCredito.mostrarGastos();
+            // listaPagCredito.listarPorTipoPagamento(planilhaMensal.getListaDeGastos());
+            // listaPagCredito.mostrarGastos();
 
-            listaPagDebito.listarPorTipoPagamento(planilhaMensal.getListaDeGastos());
-            listaPagDebito.mostrarGastos();
+            // listaPagDebito.listarPorTipoPagamento(planilhaMensal.getListaDeGastos());
+            // listaPagDebito.mostrarGastos();
 
-            listaPagPix.listarPorTipoPagamento(planilhaMensal.getListaDeGastos());
-            listaPagPix.mostrarGastos();
+            // listaPagPix.listarPorTipoPagamento(planilhaMensal.getListaDeGastos());
+            // listaPagPix.mostrarGastos();
 
         } else {
             JOptionPane.showMessageDialog(null, "Login ou Senha Inválidos.");

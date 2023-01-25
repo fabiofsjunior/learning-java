@@ -18,7 +18,7 @@ Uma lista de gastos pessoais pode conter vários atributos, dependendo do objeti
 Esses são apenas alguns exemplos de atributos que poderiam estar incluídos em uma lista de gastos pessoais. A lista pode conter outros atributos além desses, dependendo das necessidades e preferências da pessoa que a criou.
  */
 
-public class PlanilhaGastos implements PermitirAcesso{
+public class PlanilhaGastos implements PermitirAcesso {
 
     // ATRIBUTOS
 
@@ -32,13 +32,14 @@ public class PlanilhaGastos implements PermitirAcesso{
 
     }
 
-    //Construtor para listas secundárias (Tags e Forma de Pagamento)
+    // Construtor para listas secundárias (Tags e Forma de Pagamento)
     public PlanilhaGastos(String listaTagList, String listaFormaPagamento) {
         this.listaTagList = listaTagList;
         this.listaFormaPagamento = listaFormaPagamento;
 
     }
-    //Construtor para Lista Main (Planilha Mensal)
+
+    // Construtor para Lista Main (Planilha Mensal)
     public PlanilhaGastos(List<ItemTransacao> listaDeGastos, String listNome, double totalGasto) {
         this.listaDeGastos = listaDeGastos;
         this.listNome = listNome;
@@ -72,7 +73,7 @@ public class PlanilhaGastos implements PermitirAcesso{
         } catch (NullPointerException e) {
             this.listaDeGastos.add(controleGastos);
             removerTransacao(controleGastos);
-            //e.printStackTrace();
+            // e.printStackTrace();
         }
 
     }
@@ -126,77 +127,82 @@ public class PlanilhaGastos implements PermitirAcesso{
     }
 
     public void mostrarGastos() {
-        System.out.println(this.listNome);
+        if (this.listaDeGastos.isEmpty()) {
+        } else {
+            System.out.println(this.listNome);
 
-        for (ItemTransacao itemTransacao : this.listaDeGastos) {
-            System.out.println(
-                    "ID/INDEX: " + itemTransacao.idTransacao + "-" + this.listaDeGastos.indexOf(itemTransacao) + ";");
-            System.out.println("NOME: " + itemTransacao.nomeTransacao + ";");
-            System.out.println("VALOR: R$" + itemTransacao.valorTransacao + ";");
+            for (ItemTransacao itemTransacao : this.listaDeGastos) {
+                System.out.println(
+                        "ID/INDEX: " + itemTransacao.idTransacao + "-" + this.listaDeGastos.indexOf(itemTransacao)
+                                + ";");
+                System.out.println("NOME: " + itemTransacao.nomeTransacao + ";");
+                System.out.println("VALOR: R$" + itemTransacao.valorTransacao + ";");
 
-            try {
+                try {
 
-                switch (itemTransacao.tagTransacao) {
+                    switch (itemTransacao.tagTransacao) {
 
-                    case "1":
-                        System.out.println("TAG: Alimentação;");
-                        break;
-                    case "2":
-                        System.out.println("TAG: Transporte;");
-                        break;
-                    case "3":
-                        System.out.println("TAG: Saúde;");
-                        break;
-                    case "4":
-                        System.out.println("TAG: Lazer;");
-                        break;
-                    case "5":
-                        System.out.println("TAG: Roupa/Calçado;");
-                        break;
-                    case "6":
+                        case "1":
+                            System.out.println("TAG: Alimentação;");
+                            break;
+                        case "2":
+                            System.out.println("TAG: Transporte;");
+                            break;
+                        case "3":
+                            System.out.println("TAG: Saúde;");
+                            break;
+                        case "4":
+                            System.out.println("TAG: Lazer;");
+                            break;
+                        case "5":
+                            System.out.println("TAG: Roupa/Calçado;");
+                            break;
+                        case "6":
+                            System.out.println("TAG: Outros;");
+                            break;
+                    }
+                } catch (NullPointerException e) {
+                    if (itemTransacao.tagTransacao == null) {
                         System.out.println("TAG: Outros;");
-                        break;
+                    }
+
                 }
-            } catch (NullPointerException e) {
-                if (itemTransacao.tagTransacao == null) {
-                    System.out.println("TAG: Outros;");
+
+                System.out.println("DATA: " + itemTransacao.dataCompraTransacao + ";");
+
+                try {
+
+                    switch (itemTransacao.formaPagamentoTransacao) {
+
+                        case "1":
+                            System.out.println("FORMA DE PAGAMENTO: Dinheiro;");
+                            break;
+                        case "2":
+                            System.out.println("FORMA DE PAGAMENTO: Crédito;");
+                            break;
+                        case "3":
+                            System.out.println("FORMA DE PAGAMENTO: Débito;");
+                            break;
+                        case "4":
+                            System.out.println("FORMA DE PAGAMENTO: Pix;");
+                            break;
+                    }
+                } catch (NullPointerException e) {
+                    if (itemTransacao.formaPagamentoTransacao == null) {
+                        itemTransacao.formaPagamentoTransacao = "1";
+                        System.out.println("FORMA DE PAGAMENTO: Não Especificado/Considerado em Dinheiro;");
+                    }
+                    e.printStackTrace();
                 }
+                System.out.println("-----------------------------");
 
             }
-
-            System.out.println("DATA: " + itemTransacao.dataCompraTransacao + ";");
-
-            try {
-
-                switch (itemTransacao.formaPagamentoTransacao) {
-
-                    case "1":
-                        System.out.println("FORMA DE PAGAMENTO: Dinheiro;");
-                        break;
-                    case "2":
-                        System.out.println("FORMA DE PAGAMENTO: Crédito;");
-                        break;
-                    case "3":
-                        System.out.println("FORMA DE PAGAMENTO: Débito;");
-                        break;
-                    case "4":
-                        System.out.println("FORMA DE PAGAMENTO: Pix;");
-                        break;
-                }
-            } catch (NullPointerException e) {
-                if (itemTransacao.formaPagamentoTransacao == null) {
-                    itemTransacao.formaPagamentoTransacao = "1";
-                    System.out.println("FORMA DE PAGAMENTO: Não Especificado/Considerado em Dinheiro;");
-                }
-                e.printStackTrace();
-            }
-            System.out.println("-----------------------------");
-
+            System.out.println("_______________________________________________________");
+            System.out.println("Total de gastos no mês foi de: R$ " + this.totalGasto);
+            System.out.println("_______________________________________________________");
+            JOptionPane.showMessageDialog(null,
+                    "Total de gastos no mês com " + this.listNome + " foi de: R$ " + this.totalGasto);
         }
-        System.out.println("_______________________________________________________");
-        System.out.println("Total de gastos no mês foi de: R$ " + this.totalGasto);
-        System.out.println("_______________________________________________________");
-        JOptionPane.showMessageDialog(null, "Total de gastos no mês com "+this.listNome+" foi de: R$ " + this.totalGasto);
 
     }
 
