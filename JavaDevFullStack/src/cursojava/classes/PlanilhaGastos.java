@@ -55,7 +55,7 @@ public class PlanilhaGastos implements PermitirAcesso {
             controleGastos.valorTransacao = Double
                     .parseDouble(JOptionPane.showInputDialog("Digite o valor gasto \n[Ex.: 12.55]: "));
             controleGastos.nomeTransacao = JOptionPane
-                    .showInputDialog("Digite uma descrição para o gasto \n[Ex.: Crédito Celular.]: ");
+                    .showInputDialog("Digite uma descrição para o gasto: \n[Ex.: Crédito Celular.]: ");
             controleGastos.tagTransacao = JOptionPane
                     .showInputDialog(
                             "Digite uma TAG: \n[1 = Alimentação], \n[2 = Transporte], \n[3 = Saúde], \n[4 = Lazer], \n[5 = Roupa/Calçado], \n[6 = Outros]");
