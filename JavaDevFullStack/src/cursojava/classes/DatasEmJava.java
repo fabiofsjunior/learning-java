@@ -190,10 +190,10 @@ public class DatasEmJava {
 
         LocalDate dataBase = LocalDate.parse("2018-01-07");
         
-        System.out.println(dataBase.plusDays(5));
-        System.out.println(dataBase.plusWeeks(5));
-        System.out.println(dataBase.plusMonths(5));
-        System.out.println(dataBase.plusYears(5));
+        System.out.println("Aqui eu adicionei 5 dias a data : 2018-01-07 ////  Após adicionar ficou: " + dataBase.plusDays(5));
+        System.out.println("Aqui eu adicionei 5 semanas a data : 2018-01-07 ////  Após adicionar ficou: " + dataBase.plusWeeks(5));
+        System.out.println("Aqui eu adicionei 5 meses a data : 2018-01-07 ////  Após adicionar ficou: " + dataBase.plusMonths(5));
+        System.out.println("Aqui eu adicionei 5 anos a data : 2018-01-07 ////  Após adicionar ficou: " + dataBase.plusYears(5));
         System.out.println("_____________________________________________________________________\n");
 
 
