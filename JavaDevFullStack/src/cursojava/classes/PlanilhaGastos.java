@@ -32,6 +32,7 @@ public class PlanilhaGastos implements PermitirAcesso {
 
     }
 
+
     // Construtor para listas secundárias (Tags e Forma de Pagamento)
     public PlanilhaGastos(String listaTagList, String listaFormaPagamento) {
         this.listaTagList = listaTagList;
@@ -44,6 +45,11 @@ public class PlanilhaGastos implements PermitirAcesso {
         this.listaDeGastos = listaDeGastos;
         this.listNome = listNome;
         this.totalGasto = totalGasto;
+    }
+
+    public void lerArquivo(){
+
+        
     }
 
     // Método cria um objeto e adiciona a lista de gastos, com inputs pelo usuário.

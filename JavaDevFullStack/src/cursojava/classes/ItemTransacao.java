@@ -111,9 +111,11 @@ public class ItemTransacao {
 
     @Override
     public String toString() {
-        return "ItemTransacao [idTransacao=" + idTransacao + ", nomeTransacao=" + nomeTransacao + ", valorTransacao="
-                + valorTransacao + ", tagTransacao=" + tagTransacao + ", dataCompraTransacao=" + dataCompraTransacao
-                + ", formaPagamentoTransacao=" + formaPagamentoTransacao + "]";
+        return "idTransacao;" + idTransacao + "; nomeTransacao;" + nomeTransacao + "; valorTransacao;"
+                + valorTransacao + "; tagTransacao;" + tagTransacao + "; dataCompraTransacao;" + dataCompraTransacao
+                + "; formaPagamentoTransacao;" + formaPagamentoTransacao + "\n";
     }
+
+    
 
 }

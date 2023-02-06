@@ -1,5 +1,10 @@
 package cursojava.executavel;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 import cursojava.classes.PlanilhaGastos;
@@ -27,18 +32,54 @@ Plano de Contas = "Tags : Receitas/Despesas / Crédito"
 */
 
 public class GestorFinanceiro {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
+        // Configurações iniciais
         PlanilhaGastos planilhaMensal = new PlanilhaGastos();
         String senha;
         String login;
         Boolean autenticado = false;
 
+        // Classe que realiza a leitura do PATH do arquivo.
+
+        FileInputStream entradaPathArquivo = new FileInputStream(new File(JOptionPane.showInputDialog("cole o diretório:")));
+        
+        FileInputStream entradaArquivo = new FileInputStream(new File(
+                "C:\\Users\\junio\\OneDrive\\Desktop\\GitHub Repositórios\\learning-java\\JavaDevFullStack\\src\\cursojava\\arquivo.txt"));
+
+        // Classe que abre o arquivo e identifica o padrão de leitura.
+        Scanner lerArquivo = new Scanner(entradaArquivo, "UTF-8");
+        
+        // Necessário Estanciar uma lista para adicionar os objetos que serão
+        // "SPLITADOS".
+        // Lendo e realizando o Split
+        // while (lerArquivo.hasNext()) {
+        //     String linha = lerArquivo.nextLine();
+        //     String[] dados = linha.split("\\$");
+
+        //     ItemTransacao itemTransacao = new ItemTransacao(null, null, 0, null, null, null);
+        //     itemTransacao.setValorTransacao(Double.parseDouble(dados[1]));
+        //     itemTransacao.setNomeTransacao(dados[2]);
+
+        //     transacoes.add(itemTransacao);
+
+        //     // Verifica se a linha está em branco.
+        //     if (linha != null && !linha.isEmpty()) {
+        //         System.out.println(linha);
+        //     }
+        // }
+
+        // // Retorna todos os objetos da lista.
+        // for (ItemTransacao itemTransacao : transacoes) {
+        //     System.out.println(itemTransacao);
+
+        // }
+        
+
         senha = JOptionPane.showInputDialog("Informe o Login! ");
         login = JOptionPane.showInputDialog("Informe o Senha! ");
 
-
-        //ESTA LINHA TENTA PRIMEIRA AUTENTICAÇÃO
+        // ESTA LINHA TENTA PRIMEIRA AUTENTICAÇÃO
         if (planilhaMensal.autenticar(login, senha)) {
 
             autenticado = true;
@@ -109,7 +150,6 @@ public class GestorFinanceiro {
 
             listaTagSaude.listarPorTags(planilhaMensal.getListaDeGastos());
             listaTagSaude.mostrarGastos();
-            ;
 
             listaTagTransporte.listarPorTags(planilhaMensal.getListaDeGastos());
             listaTagRoupas.mostrarGastos();
@@ -133,9 +173,8 @@ public class GestorFinanceiro {
             // listaPagPix.listarPorTipoPagamento(planilhaMensal.getListaDeGastos());
             // listaPagPix.mostrarGastos();
 
-        } else if (autenticado == false) { //AQUI REALIZA UMA NOVA TENTATIVA DE AUTENTICAÇÃO
-           
-            
+        } else if (autenticado == false) { // AQUI REALIZA UMA NOVA TENTATIVA DE AUTENTICAÇÃO
+
             JOptionPane.showMessageDialog(null, "Login ou Senha Inválidos.");
             for (int tentativas = 2; tentativas >= 0; --tentativas) {
 
@@ -145,12 +184,11 @@ public class GestorFinanceiro {
                 if (planilhaMensal.autenticar(login, senha)) {
                     break;
 
-                } 
-                else if (tentativas == 0){
+                } else if (tentativas == 0) {
                     JOptionPane.showMessageDialog(null, "Acesso Bloqueado, contate o suporte");
-                }
-                else {
-                    JOptionPane.showMessageDialog(null, "Login ou Senha Inválidos. Tentativas restantes " + (tentativas-1));
+                } else {
+                    JOptionPane.showMessageDialog(null,
+                            "Login ou Senha Inválidos. Tentativas restantes " + (tentativas - 1));
                 }
             }
             planilhaMensal.setListNome("Lista De Gastos Mensal");
@@ -243,11 +281,11 @@ public class GestorFinanceiro {
             // listaPagPix.listarPorTipoPagamento(planilhaMensal.getListaDeGastos());
             // listaPagPix.mostrarGastos();
 
-        
         } else {
             JOptionPane.showMessageDialog(null, "Acesso Bloqueado, contate o suporte");
         }
-    
-        JOptionPane.showMessageDialog(null, "FICAMOS FELIZES EM AJUDAR VOCÊ COM SUAS FINANÇAS, \n Encerrando programa!");
+
+        JOptionPane.showMessageDialog(null,
+                "FICAMOS FELIZES EM AJUDAR VOCÊ COM SUAS FINANÇAS, \n Encerrando programa!");
     }
 }
