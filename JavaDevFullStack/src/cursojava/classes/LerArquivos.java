@@ -3,6 +3,7 @@ package cursojava.classes;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +12,20 @@ import java.util.Scanner;
 
 public class LerArquivos {
     public static void main(String[] args) throws IOException {
-        EscreveArquivos escreveArquivos = new EscreveArquivos();
+
+        // Inicia arquivo pelo diretório.
+        File arquivo = new File(
+                "C:\\Users\\junio\\OneDrive\\Desktop\\GitHub Repositórios\\learning-java\\JavaDevFullStack\\src\\cursojava\\arquivo.csv");
+
+        // Metodologia simples
+
+        // Condição caso o arquivo não exista, criar um novo
+
+        FileWriter escreveArquivos = new FileWriter(arquivo);
+
+        if (!arquivo.exists()) {
+            arquivo.createNewFile();
+        }
 
         // Classe que realiza a leitura do PATH do arquivo.
         FileInputStream entradaArquivo = new FileInputStream(new File(
@@ -40,17 +54,18 @@ public class LerArquivos {
 
             String[] dados = linha.split(regex);
 
-            ArrayList<String> list = new ArrayList<>(Arrays.asList(dados));
-            String[] result = list.toArray(new String[0]);
+            try {
+                ItemTransacao itemTransacao = new ItemTransacao(null, null, 0, null, null, null);
+                itemTransacao.setDataCompraTransacao(dados[1]);
+                itemTransacao.setValorTransacao(Double.parseDouble(dados[3]));
+                itemTransacao.setNomeTransacao(dados[4].toUpperCase());
+                itemTransacao.setFormaPagamentoTransacao(dados[5]);
+                itemTransacao.setTagTransacao(dados[5]);
+                transacoes.add(itemTransacao);
 
-            ItemTransacao itemTransacao = new ItemTransacao(null, null, 0, null, null, null);
-            itemTransacao.setDataCompraTransacao(dados[1]);
-            itemTransacao.setValorTransacao(Double.parseDouble(dados[3]));
-            itemTransacao.setNomeTransacao(dados[4]);
-            itemTransacao.setFormaPagamentoTransacao(dados[5]);
-            itemTransacao.setTagTransacao(dados[5]);
-
-            transacoes.add(itemTransacao);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
             // Verifica se a linha está em branco.
             if (linha != null && !linha.isEmpty()) {
@@ -61,8 +76,12 @@ public class LerArquivos {
         // Retorna todos os objetos da lista.
         for (ItemTransacao itemTransacao : transacoes) {
             System.out.println(itemTransacao);
-            escreveArquivos.escreverNoArquivo(itemTransacao);
+            itemTransacao.getNomeTransacao();
+            escreveArquivos.write(itemTransacao.toString());
 
         }
+
+        escreveArquivos.flush();
+        escreveArquivos.close();
     }
 }
