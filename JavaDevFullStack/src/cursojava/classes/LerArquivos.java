@@ -53,6 +53,7 @@ public class LerArquivos {
             linha = linha.replace(":", ";");
             linha = linha.replace("$", ";");
             linha = linha.replace(" ", "");
+            linha = linha.replace("/", "-");
             linha = linha.replaceFirst(";", ":");
 
             String[] dados = linha.split(regex);
