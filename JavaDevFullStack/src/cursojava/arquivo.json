@@ -1,6 +1,6 @@
 [
   {
-    "idTransacao": "5f234adb-85e4-4bbc-a905-6f559311d4d4",
+    "idTransacao": "71802c93-a093-4bab-96f7-1d5b4c642a99",
     "nomeTransacao": "MASSAGEM",
     "valorTransacao": 80.0,
     "tagTransacao": "débito",
@@ -8,7 +8,7 @@
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "fbd3380c-a7c2-41a8-8812-b1e326deaba5",
+    "idTransacao": "b802a1a0-aced-4718-a8e4-6958ed63719b",
     "nomeTransacao": "LIVRO",
     "valorTransacao": 50.0,
     "tagTransacao": "crédito",
@@ -16,7 +16,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "6ddaea94-ed7a-4c55-bca9-67e9e2e132fe",
+    "idTransacao": "e0307d3c-9519-4b3b-8e9c-40ea9669a572",
     "nomeTransacao": "JANTAR",
     "valorTransacao": 60.0,
     "tagTransacao": "dinheiro",
@@ -24,7 +24,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "78edfdd9-cff1-44c0-bf5f-c82be25a7b43",
+    "idTransacao": "defe8876-0f8c-4b4a-a790-de68c35fe172",
     "nomeTransacao": "SESSÃODEFOTOS",
     "valorTransacao": 30.0,
     "tagTransacao": "débito",
@@ -32,7 +32,7 @@
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "400d79a0-7ec2-435b-b613-f2a70e47fed3",
+    "idTransacao": "04992161-4141-40d8-96ca-37357b10182d",
     "nomeTransacao": "CAMINHADAGUIADA",
     "valorTransacao": 40.0,
     "tagTransacao": "dinheiro",
@@ -40,7 +40,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "59ebc78f-7f56-4e76-8335-b6553d7cb412",
+    "idTransacao": "95dff68c-bcaa-4c2d-9a3d-eaa140419381",
     "nomeTransacao": "CURSOONLINE",
     "valorTransacao": 100.0,
     "tagTransacao": "crédito",
@@ -48,7 +48,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "fc262856-4a82-4a8b-9956-91024471bd16",
+    "idTransacao": "6f38446c-a6d4-4339-9255-e6f02fcbe3bb",
     "nomeTransacao": "YOGA",
     "valorTransacao": 25.0,
     "tagTransacao": "débito",
@@ -56,7 +56,7 @@
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "a33ed9a5-a274-49f1-91e3-246012010042",
+    "idTransacao": "b6aa0baa-20ba-4918-bfe6-1b4e7cea8248",
     "nomeTransacao": "JANTAR",
     "valorTransacao": 90.0,
     "tagTransacao": "dinheiro",
@@ -64,7 +64,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "61792398-b419-4e0d-80ca-70992b840b30",
+    "idTransacao": "494487a5-8e68-4375-8600-b2bef1e90b16",
     "nomeTransacao": "PASSEIODEBICICLETA",
     "valorTransacao": 35.0,
     "tagTransacao": "crédito",
@@ -72,7 +72,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "b84a40cb-3cb1-4225-b302-a3bac214a68f",
+    "idTransacao": "08e60d89-c78f-4b6d-bfa8-98ea868f59b6",
     "nomeTransacao": "AULADEDANÇA",
     "valorTransacao": 75.0,
     "tagTransacao": "dinheiro",
@@ -80,7 +80,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "5aa52a05-fba2-413f-acc8-7c6d08e7fd59",
+    "idTransacao": "4883c8ac-75a5-4cde-8e21-aeaa91f4a773",
     "nomeTransacao": "CINEMA",
     "valorTransacao": 50.0,
     "tagTransacao": "débito",
@@ -88,7 +88,7 @@
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "78944c73-4188-43c4-b0d1-a99dde2304a5",
+    "idTransacao": "58b9474a-adff-45fa-aca1-f1450c3d82ab",
     "nomeTransacao": "CURSOPRESENCIAL",
     "valorTransacao": 120.0,
     "tagTransacao": "crédito",
@@ -96,7 +96,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "42e9bd9d-28b0-4516-80ed-0c965bf0505f",
+    "idTransacao": "0e918e9c-625c-41d2-bb9f-705565ed83fd",
     "nomeTransacao": "JANTAR",
     "valorTransacao": 90.0,
     "tagTransacao": "dinheiro",
@@ -104,7 +104,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "2cb608cc-54fa-4323-b73d-fe2a787e914c",
+    "idTransacao": "90435ac7-acf4-4825-81eb-963c1080f7d6",
     "nomeTransacao": "PIQUENIQUE",
     "valorTransacao": 35.0,
     "tagTransacao": "débito",
@@ -112,7 +112,7 @@
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "36db41fb-3420-4fc6-926f-3fd8c956dde7",
+    "idTransacao": "aa3a6cbe-17f8-4162-8341-5a994ededd68",
     "nomeTransacao": "TEATRO",
     "valorTransacao": 50.0,
     "tagTransacao": "crédito",
@@ -120,7 +120,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "c8314ee9-5f36-4c96-9b93-3de0f7adbe23",
+    "idTransacao": "528970c7-e91a-413b-b378-e27e273a288c",
     "nomeTransacao": "MASSAGEM",
     "valorTransacao": 60.0,
     "tagTransacao": "dinheiro",
@@ -128,7 +128,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "a2c14523-3dd4-4d63-8bbc-2d43c39e437d",
+    "idTransacao": "1f393eb5-478a-47e2-b9c8-6fed53f2d48d",
     "nomeTransacao": "JANTAR",
     "valorTransacao": 80.0,
     "tagTransacao": "débito",
@@ -136,7 +136,7 @@
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "3720a654-4710-401c-af55-7c2998a93b47",
+    "idTransacao": "69130421-ac36-4705-ad4d-43b1b6f1e4eb",
     "nomeTransacao": "CAMINHADANANATUREZA",
     "valorTransacao": 25.0,
     "tagTransacao": "crédito",
@@ -144,7 +144,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "e575c36f-c78d-40b4-a090-36cacd80f906",
+    "idTransacao": "c62ac4ad-faee-47ab-8092-4d4f43cc3ae8",
     "nomeTransacao": "CURSODEIDIOMAS",
     "valorTransacao": 120.0,
     "tagTransacao": "dinheiro",
@@ -152,7 +152,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "c24cba87-f84e-4476-a1b8-59c9ba0720e7",
+    "idTransacao": "3be3e6ff-4d20-44dd-88bb-6c3210a1d8d8",
     "nomeTransacao": "CINEMA",
     "valorTransacao": 35.0,
     "tagTransacao": "débito",
@@ -160,7 +160,7 @@
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "2f8128d5-ec85-4ca9-a46e-992748e79add",
+    "idTransacao": "7fc20c1a-a15b-4b1d-8ef7-5b2d47ba4594",
     "nomeTransacao": "JANTAR",
     "valorTransacao": 50.0,
     "tagTransacao": "débito",
@@ -168,7 +168,7 @@
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "5e77b7a3-408c-4980-871a-c512cf4c7bb9",
+    "idTransacao": "0b03ca10-3094-4ae0-b6c8-6347ee7f2d9e",
     "nomeTransacao": "ELETRÔNICOS",
     "valorTransacao": 80.0,
     "tagTransacao": "crédito",
@@ -176,7 +176,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "1af0b67b-810b-4178-8ce5-7d648595313b",
+    "idTransacao": "2cb217d5-d70b-4b31-ba1d-2942245c9b9d",
     "nomeTransacao": "FLORES",
     "valorTransacao": 60.0,
     "tagTransacao": "dinheiro",
@@ -184,7 +184,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "19924aef-935e-4ea6-b64e-f6f28648e7ad",
+    "idTransacao": "807c7867-73f3-4d2a-931f-63f2e00271bf",
     "nomeTransacao": "LIVROS",
     "valorTransacao": 120.0,
     "tagTransacao": "crédito",
@@ -192,7 +192,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "cdc6d973-fdce-49dc-82bb-79f5da285f6b",
+    "idTransacao": "2a2c17fc-14ec-4228-9847-063d84697b5b",
     "nomeTransacao": "ROUPAS",
     "valorTransacao": 90.0,
     "tagTransacao": "dinheiro",
@@ -200,7 +200,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "73799b4f-ade6-40f9-9013-d305ba18027b",
+    "idTransacao": "157ed1a8-fedf-42a8-ae39-fc7d106de1ff",
     "nomeTransacao": "GASOLINA",
     "valorTransacao": 40.0,
     "tagTransacao": "débito",
@@ -208,7 +208,7 @@
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "92a166e4-9fdd-493d-acbb-0ede58a81015",
+    "idTransacao": "d3ff0515-b891-4c62-bdea-4e67a6694921",
     "nomeTransacao": "CURSOONLINE",
     "valorTransacao": 200.0,
     "tagTransacao": "crédito",
@@ -216,7 +216,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "8c7b8368-9b3b-4971-9a9a-1b2dd0877ce5",
+    "idTransacao": "5bdc7c70-680a-44c7-a816-bad322788245",
     "nomeTransacao": "JOGOS",
     "valorTransacao": 100.0,
     "tagTransacao": "crédito",
@@ -224,7 +224,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "42eb9612-04be-454d-9f31-35f9b7ae62bc",
+    "idTransacao": "24841718-3aa6-4855-91cf-747c259f3bf7",
     "nomeTransacao": "CABELO",
     "valorTransacao": 150.0,
     "tagTransacao": "dinheiro",
@@ -232,7 +232,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "d77881a7-760a-486d-aec0-37be8a333990",
+    "idTransacao": "8505107f-c979-4fa6-a1d6-8a19cdc6f4b0",
     "nomeTransacao": "PRESENTE",
     "valorTransacao": 70.0,
     "tagTransacao": "crédito",
@@ -240,7 +240,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "3f226f17-3422-45b3-b504-c3534c3fb9f2",
+    "idTransacao": "9117c249-1875-4cf1-863c-4bf9c96c86ca",
     "nomeTransacao": "JÓIAS",
     "valorTransacao": 120.0,
     "tagTransacao": "dinheiro",
@@ -248,7 +248,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "e48aaefd-e58e-4bed-918c-1dcce0a826e1",
+    "idTransacao": "e3d2fdc0-e84f-48a9-b940-2e9be5b4bc72",
     "nomeTransacao": "SAPATOS",
     "valorTransacao": 90.0,
     "tagTransacao": "débito",
@@ -256,7 +256,7 @@
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "75fedb38-0328-414b-a5ab-49c858375cb2",
+    "idTransacao": "982f6e18-af45-428d-8207-be3e9a2c909b",
     "nomeTransacao": "MASSAGEM",
     "valorTransacao": 50.0,
     "tagTransacao": "dinheiro",
@@ -264,7 +264,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "8e326e57-27cf-4c61-b545-2c5613d93fc2",
+    "idTransacao": "52c92aef-cd25-48a0-a8a1-4cbee8e3276f",
     "nomeTransacao": "VIAGEM",
     "valorTransacao": 130.0,
     "tagTransacao": "crédito",
@@ -272,7 +272,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "81b857bf-e7db-49c0-8fba-38a510148e8b",
+    "idTransacao": "caf59fc7-0f4c-408c-9901-3d96b7f2665c",
     "nomeTransacao": "RELÓGIOS",
     "valorTransacao": 200.0,
     "tagTransacao": "dinheiro",
@@ -280,7 +280,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "1a8850f2-b281-467b-8d54-23a326c84d5b",
+    "idTransacao": "b43da5fb-6af8-4e64-b571-a531c532fef9",
     "nomeTransacao": "PERFUMES",
     "valorTransacao": 60.0,
     "tagTransacao": "crédito",
@@ -288,7 +288,7 @@
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "07710b3c-d338-48e7-ba41-74fdb8241ae9",
+    "idTransacao": "15cd05d0-ee63-4c32-87d4-52e0a8fd989d",
     "nomeTransacao": "JANTAR",
     "valorTransacao": 70.0,
     "tagTransacao": "dinheiro",
@@ -296,7 +296,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "260e572c-b411-48ca-a9ae-3470c478f123",
+    "idTransacao": "2e64f802-d4e7-4fa4-895e-9459235efcda",
     "nomeTransacao": "ROUPAS",
     "valorTransacao": 80.0,
     "tagTransacao": "débito",
@@ -304,7 +304,7 @@
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "fc20eeb0-ff1d-4dc5-b8e2-04be00dc43a5",
+    "idTransacao": "6bfe6672-073d-4e32-92e9-34711e03c6d4",
     "nomeTransacao": "DECORAÇÃO",
     "valorTransacao": 90.0,
     "tagTransacao": "dinheiro",
@@ -312,7 +312,7 @@
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "2f4ecb0d-bb95-4317-852a-4c732d8bd983",
+    "idTransacao": "1741a738-e25b-43d5-89f0-092f6f269862",
     "nomeTransacao": "CINEMA",
     "valorTransacao": 50.0,
     "tagTransacao": "crédito",

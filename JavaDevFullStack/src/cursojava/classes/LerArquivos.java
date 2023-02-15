@@ -3,6 +3,7 @@ package cursojava.classes;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -12,9 +13,14 @@ import java.util.Scanner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 
 public class LerArquivos {
     public static void main(String[] args) throws IOException {
+
+        System.setProperty("file.encoding", "UTF-8"); // Define a codificação padrão
 
         // Metodologia simples
 
@@ -84,7 +90,12 @@ public class LerArquivos {
             escreveArquivos.write(itemTransacao.toString());
 
         }
+        escreveArquivos.flush();
+        escreveArquivos.close();
 
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        // APARTIR DAQUI EXPORTA JSON
         // Organiza a estrutura do arquivo JSON.
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
@@ -104,8 +115,26 @@ public class LerArquivos {
 
         escreverJson.flush();
         escreverJson.close();
+        // APARTIR DAQUI ENCERRA O EXPORT JSON
 
-        escreveArquivos.flush();
-        escreveArquivos.close();
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        // LEITURA DE ARQUIVO JSON
+        FileReader fileReader = new FileReader(arquivoJson);
+
+        JsonArray jsonArray = (JsonArray) JsonParser.parseReader(fileReader);
+        List<ItemTransacao> listaTransacoes = new ArrayList<ItemTransacao>();
+
+        for (JsonElement jsonElement : jsonArray) {
+
+            ItemTransacao itemTransacaoFromJson = new Gson().fromJson(jsonElement, ItemTransacao.class);
+            listaTransacoes.add(itemTransacaoFromJson);
+
+        }
+        System.out.println("Leitura do Arquivo Json: " + listaTransacoes);
+
+
+        
     }
 }

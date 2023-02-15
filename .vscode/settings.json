@@ -7,5 +7,6 @@
         "JavaDevFullStack/lib/poi-5.0.0.jar",
         "JavaDevFullStack/lib/commons-math3-3.6.1.jar",
         "JavaDevFullStack/lib/gson-2.10.1.jar"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
