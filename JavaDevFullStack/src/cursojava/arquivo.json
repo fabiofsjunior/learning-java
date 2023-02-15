@@ -1,322 +1,322 @@
 [
   {
-    "idTransacao": "57eca2af-4b09-43dc-87c0-9c2e8756a248",
+    "idTransacao": "5f234adb-85e4-4bbc-a905-6f559311d4d4",
     "nomeTransacao": "MASSAGEM",
     "valorTransacao": 80.0,
     "tagTransacao": "débito",
-    "dataCompraTransacao": "07/02/2023",
+    "dataCompraTransacao": "07-02-2023",
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "8823a4ca-4124-404f-ab26-4e096839e7fd",
+    "idTransacao": "fbd3380c-a7c2-41a8-8812-b1e326deaba5",
     "nomeTransacao": "LIVRO",
     "valorTransacao": 50.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "03/01/2023",
+    "dataCompraTransacao": "03-01-2023",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "d53500c0-1915-4041-af6a-dc5bdbc550c9",
+    "idTransacao": "6ddaea94-ed7a-4c55-bca9-67e9e2e132fe",
     "nomeTransacao": "JANTAR",
     "valorTransacao": 60.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "08/02/2023",
+    "dataCompraTransacao": "08-02-2023",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "9a04915c-7a9c-4101-93ce-b92f3245a7a4",
+    "idTransacao": "78edfdd9-cff1-44c0-bf5f-c82be25a7b43",
     "nomeTransacao": "SESSÃODEFOTOS",
     "valorTransacao": 30.0,
     "tagTransacao": "débito",
-    "dataCompraTransacao": "01/01/2023",
+    "dataCompraTransacao": "01-01-2023",
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "e12f3985-67ec-49db-aa00-1cfe3a9fd6c5",
+    "idTransacao": "400d79a0-7ec2-435b-b613-f2a70e47fed3",
     "nomeTransacao": "CAMINHADAGUIADA",
     "valorTransacao": 40.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "10/02/2023",
+    "dataCompraTransacao": "10-02-2023",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "3f58ba3b-2561-46e1-b039-73ca8933ae6e",
+    "idTransacao": "59ebc78f-7f56-4e76-8335-b6553d7cb412",
     "nomeTransacao": "CURSOONLINE",
     "valorTransacao": 100.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "02/01/2023",
+    "dataCompraTransacao": "02-01-2023",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "694e5445-99a9-4b03-8f44-2785deed884b",
+    "idTransacao": "fc262856-4a82-4a8b-9956-91024471bd16",
     "nomeTransacao": "YOGA",
     "valorTransacao": 25.0,
     "tagTransacao": "débito",
-    "dataCompraTransacao": "07/02/2023",
+    "dataCompraTransacao": "07-02-2023",
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "13bc32a2-c4ad-4bc2-b34d-9e3a32fb5420",
+    "idTransacao": "a33ed9a5-a274-49f1-91e3-246012010042",
     "nomeTransacao": "JANTAR",
     "valorTransacao": 90.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "05/02/2023",
+    "dataCompraTransacao": "05-02-2023",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "196e338b-9d43-4fb3-8d91-fcdeb549b61e",
+    "idTransacao": "61792398-b419-4e0d-80ca-70992b840b30",
     "nomeTransacao": "PASSEIODEBICICLETA",
     "valorTransacao": 35.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "01/01/2023",
+    "dataCompraTransacao": "01-01-2023",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "5a21d22e-a585-40e0-87aa-1f61c64e9b64",
+    "idTransacao": "b84a40cb-3cb1-4225-b302-a3bac214a68f",
     "nomeTransacao": "AULADEDANÇA",
     "valorTransacao": 75.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "06/02/2023",
+    "dataCompraTransacao": "06-02-2023",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "3a612cf6-13b2-437e-93be-19a832fff065",
+    "idTransacao": "5aa52a05-fba2-413f-acc8-7c6d08e7fd59",
     "nomeTransacao": "CINEMA",
     "valorTransacao": 50.0,
     "tagTransacao": "débito",
-    "dataCompraTransacao": "01/01/2023",
+    "dataCompraTransacao": "01-01-2023",
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "4b5234ab-6982-4f7d-8870-b9f5315a2779",
+    "idTransacao": "78944c73-4188-43c4-b0d1-a99dde2304a5",
     "nomeTransacao": "CURSOPRESENCIAL",
     "valorTransacao": 120.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "02/01/2023",
+    "dataCompraTransacao": "02-01-2023",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "1f3a3ca1-ba24-4601-95f4-72090d796965",
+    "idTransacao": "42e9bd9d-28b0-4516-80ed-0c965bf0505f",
     "nomeTransacao": "JANTAR",
     "valorTransacao": 90.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "07/02/2023",
+    "dataCompraTransacao": "07-02-2023",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "4255d2b4-3981-428d-adda-fe16caa76b41",
+    "idTransacao": "2cb608cc-54fa-4323-b73d-fe2a787e914c",
     "nomeTransacao": "PIQUENIQUE",
     "valorTransacao": 35.0,
     "tagTransacao": "débito",
-    "dataCompraTransacao": "06/02/2023",
+    "dataCompraTransacao": "06-02-2023",
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "cc6018c0-543d-4145-bcc1-b559e8eb440a",
+    "idTransacao": "36db41fb-3420-4fc6-926f-3fd8c956dde7",
     "nomeTransacao": "TEATRO",
     "valorTransacao": 50.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "01/01/2023",
+    "dataCompraTransacao": "01-01-2023",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "f5e54641-4e6e-4226-9f9e-e755d02249df",
+    "idTransacao": "c8314ee9-5f36-4c96-9b93-3de0f7adbe23",
     "nomeTransacao": "MASSAGEM",
     "valorTransacao": 60.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "05/02/2023",
+    "dataCompraTransacao": "05-02-2023",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "27c531d6-8390-4f86-98a6-71dda6be381c",
+    "idTransacao": "a2c14523-3dd4-4d63-8bbc-2d43c39e437d",
     "nomeTransacao": "JANTAR",
     "valorTransacao": 80.0,
     "tagTransacao": "débito",
-    "dataCompraTransacao": "06/02/2023",
+    "dataCompraTransacao": "06-02-2023",
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "4860884b-a39e-4d08-acf1-63a7e800423b",
+    "idTransacao": "3720a654-4710-401c-af55-7c2998a93b47",
     "nomeTransacao": "CAMINHADANANATUREZA",
     "valorTransacao": 25.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "01/01/2023",
+    "dataCompraTransacao": "01-01-2023",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "256130e8-7700-49ee-a530-68f367bbabda",
+    "idTransacao": "e575c36f-c78d-40b4-a090-36cacd80f906",
     "nomeTransacao": "CURSODEIDIOMAS",
     "valorTransacao": 120.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "02/01/2023",
+    "dataCompraTransacao": "02-01-2023",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "4b9e542d-53d6-4681-9fd1-1c9d8c485f2e",
+    "idTransacao": "c24cba87-f84e-4476-a1b8-59c9ba0720e7",
     "nomeTransacao": "CINEMA",
     "valorTransacao": 35.0,
     "tagTransacao": "débito",
-    "dataCompraTransacao": "07/02/2023",
+    "dataCompraTransacao": "07-02-2023",
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "1dac6283-66cf-4357-a28b-ece92ce14664",
+    "idTransacao": "2f8128d5-ec85-4ca9-a46e-992748e79add",
     "nomeTransacao": "JANTAR",
     "valorTransacao": 50.0,
     "tagTransacao": "débito",
-    "dataCompraTransacao": "07/02/2023",
+    "dataCompraTransacao": "07-02-2023",
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "b7c4d431-a9fa-4c67-99f6-c24e914db6b9",
+    "idTransacao": "5e77b7a3-408c-4980-871a-c512cf4c7bb9",
     "nomeTransacao": "ELETRÔNICOS",
     "valorTransacao": 80.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "05/12/2022",
+    "dataCompraTransacao": "05-12-2022",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "06e87c04-07f1-4160-a404-f97d1bbd6f12",
+    "idTransacao": "1af0b67b-810b-4178-8ce5-7d648595313b",
     "nomeTransacao": "FLORES",
     "valorTransacao": 60.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "31/08/2022",
+    "dataCompraTransacao": "31-08-2022",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "a9026e1a-1a2e-4882-9429-873d5703fdac",
+    "idTransacao": "19924aef-935e-4ea6-b64e-f6f28648e7ad",
     "nomeTransacao": "LIVROS",
     "valorTransacao": 120.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "12/01/2023",
+    "dataCompraTransacao": "12-01-2023",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "751d76c7-76b7-44bc-b8d2-f71761175aca",
+    "idTransacao": "cdc6d973-fdce-49dc-82bb-79f5da285f6b",
     "nomeTransacao": "ROUPAS",
     "valorTransacao": 90.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "22/06/2022",
+    "dataCompraTransacao": "22-06-2022",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "c3564cf8-7320-435b-8ccb-51a0de6cdecc",
+    "idTransacao": "73799b4f-ade6-40f9-9013-d305ba18027b",
     "nomeTransacao": "GASOLINA",
     "valorTransacao": 40.0,
     "tagTransacao": "débito",
-    "dataCompraTransacao": "07/07/2022",
+    "dataCompraTransacao": "07-07-2022",
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "57393d47-82b5-4c03-ac08-cd34081f142f",
+    "idTransacao": "92a166e4-9fdd-493d-acbb-0ede58a81015",
     "nomeTransacao": "CURSOONLINE",
     "valorTransacao": 200.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "01/01/2023",
+    "dataCompraTransacao": "01-01-2023",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "d7c4e5ec-44fc-4219-8ac9-c076f9763dc9",
+    "idTransacao": "8c7b8368-9b3b-4971-9a9a-1b2dd0877ce5",
     "nomeTransacao": "JOGOS",
     "valorTransacao": 100.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "08/05/2022",
+    "dataCompraTransacao": "08-05-2022",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "327b119b-3b32-43ef-b5d5-6af6a2bbfa25",
+    "idTransacao": "42eb9612-04be-454d-9f31-35f9b7ae62bc",
     "nomeTransacao": "CABELO",
     "valorTransacao": 150.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "15/09/2022",
+    "dataCompraTransacao": "15-09-2022",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "fdb448b2-0348-482f-9651-7e0f0e7566fc",
+    "idTransacao": "d77881a7-760a-486d-aec0-37be8a333990",
     "nomeTransacao": "PRESENTE",
     "valorTransacao": 70.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "17/11/2022",
+    "dataCompraTransacao": "17-11-2022",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "67dc8b67-0a28-4c50-898e-e6b4e53de15e",
+    "idTransacao": "3f226f17-3422-45b3-b504-c3534c3fb9f2",
     "nomeTransacao": "JÓIAS",
     "valorTransacao": 120.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "20/12/2022",
+    "dataCompraTransacao": "20-12-2022",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "e00bbb19-47e5-42b3-b1e3-25a73f792bd4",
+    "idTransacao": "e48aaefd-e58e-4bed-918c-1dcce0a826e1",
     "nomeTransacao": "SAPATOS",
     "valorTransacao": 90.0,
     "tagTransacao": "débito",
-    "dataCompraTransacao": "02/02/2023",
+    "dataCompraTransacao": "02-02-2023",
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "8f2c8765-80f8-47ef-88a2-fb76d81ebfde",
+    "idTransacao": "75fedb38-0328-414b-a5ab-49c858375cb2",
     "nomeTransacao": "MASSAGEM",
     "valorTransacao": 50.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "25/03/2022",
+    "dataCompraTransacao": "25-03-2022",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "0a6094d9-26d5-4a38-b789-b3ab40643563",
+    "idTransacao": "8e326e57-27cf-4c61-b545-2c5613d93fc2",
     "nomeTransacao": "VIAGEM",
     "valorTransacao": 130.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "01/07/2022",
+    "dataCompraTransacao": "01-07-2022",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "b5f1f1a7-b3fc-4258-ac7a-714a73596fbd",
+    "idTransacao": "81b857bf-e7db-49c0-8fba-38a510148e8b",
     "nomeTransacao": "RELÓGIOS",
     "valorTransacao": 200.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "08/01/2023",
+    "dataCompraTransacao": "08-01-2023",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "0ee7116d-5e6e-427f-afc5-c760eda9a1f7",
+    "idTransacao": "1a8850f2-b281-467b-8d54-23a326c84d5b",
     "nomeTransacao": "PERFUMES",
     "valorTransacao": 60.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "30/06/2022",
+    "dataCompraTransacao": "30-06-2022",
     "formaPagamentoTransacao": "crédito"
   },
   {
-    "idTransacao": "dc9e1368-6828-4a6d-a3aa-330118179bf1",
+    "idTransacao": "07710b3c-d338-48e7-ba41-74fdb8241ae9",
     "nomeTransacao": "JANTAR",
     "valorTransacao": 70.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "11/05/2022",
+    "dataCompraTransacao": "11-05-2022",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "ab3b5750-0148-426d-823e-702da4d4ce99",
+    "idTransacao": "260e572c-b411-48ca-a9ae-3470c478f123",
     "nomeTransacao": "ROUPAS",
     "valorTransacao": 80.0,
     "tagTransacao": "débito",
-    "dataCompraTransacao": "01/12/2022",
+    "dataCompraTransacao": "01-12-2022",
     "formaPagamentoTransacao": "débito"
   },
   {
-    "idTransacao": "251177e1-10b7-495d-94d7-870c7e0b5e47",
+    "idTransacao": "fc20eeb0-ff1d-4dc5-b8e2-04be00dc43a5",
     "nomeTransacao": "DECORAÇÃO",
     "valorTransacao": 90.0,
     "tagTransacao": "dinheiro",
-    "dataCompraTransacao": "19/02/2023",
+    "dataCompraTransacao": "19-02-2023",
     "formaPagamentoTransacao": "dinheiro"
   },
   {
-    "idTransacao": "08bdbd5a-64d3-4cc4-a924-516d0937237e",
+    "idTransacao": "2f4ecb0d-bb95-4317-852a-4c732d8bd983",
     "nomeTransacao": "CINEMA",
     "valorTransacao": 50.0,
     "tagTransacao": "crédito",
-    "dataCompraTransacao": "31/07/2022",
+    "dataCompraTransacao": "31-07-2022",
     "formaPagamentoTransacao": "crédito"
   }
 ]
