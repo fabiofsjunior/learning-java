@@ -40,6 +40,9 @@ public class EscreveArquivos {
 
         // ao final do código é importante fazer: o flush() que garante se os dados
         // foram gravados e o close() no arquivo.
+
+
+        
         escrever_no_arquivo.flush();
         escrever_no_arquivo.close();
 

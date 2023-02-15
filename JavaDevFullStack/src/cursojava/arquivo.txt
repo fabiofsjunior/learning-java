@@ -1,41 +1,40 @@
-[11:31, 01/01/2023] Fábio F S Júnior: 120$ fotos mel; crédito
-[17:21, 01/01/2023] Fábio F S Júnior: 15$ refri; crédito
-[17:22, 01/01/2023] Fábio F S Júnior: 30$ vinho; crédito
-[19:02, 02/01/2023] Fábio F S Júnior: 11$ pastel; crédito
-[17:41, 03/01/2023] Fábio F S Júnior: 271$ Faculdade; crédito
-[18:07, 03/01/2023] Fábio F S Júnior: 228,78$ Mesa Escritório em 4x; crédito
-[21:43, 03/01/2023] Fábio F S Júnior: 5,50$ pastel; dinheiro
-[23:53, 04/01/2023] Fábio F S Júnior: 25,50$ subway; crédito
-[23:53, 04/01/2023] Fábio F S Júnior: 28$ bobs; crédito
-[08:43, 05/01/2023] Fábio F S Júnior: 88,27$ carne e algumas coisas; crédito
-[20:56, 06/01/2023] Fábio F S Júnior: 54,41$ carne e algumas coisas; crédito
-[20:46, 08/01/2023] Fábio F S Júnior: 25,50$ subway; crédito
-[09:05, 09/01/2023] Fábio F S Júnior: 95$ grãos e banana; crédito
-[10:05, 09/01/2023] Fábio F S Júnior: 60$ seguro da moto; crédito
-[13:39, 10/01/2023] Fábio F S Júnior: 16$ almoço; crédito
-[20:03, 10/01/2023] Fábio F S Júnior: 82$ deskontao; crédito
-[14:12, 13/01/2023] Fábio F S Júnior: 100$ oleo da moto; crédito
-[15:33, 13/01/2023] Fábio F S Júnior: 44$ natação melissa; crédito
-[15:33, 13/01/2023] Fábio F S Júnior: 7,50$ manteiga bolo; crédito
-[13:47, 14/01/2023] Fábio F S Júnior: 33,35$ atacado tomadas; crédito
-[14:49, 17/01/2023] Fábio F S Júnior: 15$ cabelo; dinheiro
-[20:44, 17/01/2023] Fábio F S Júnior: 16,50$ pastel; crédito
-[09:07, 19/01/2023] Fábio F S Júnior: 57$ cereais; crédito
-[10:26, 19/01/2023] Fábio F S Júnior: 164,99$ hapvida melissa; crédito
-[19:36, 19/01/2023] Fábio F S Júnior: 13$ Ifood Beirute; crédito
-[15:29, 20/01/2023] Fábio F S Júnior: 3$ casquinha; crédito
-[16:46, 24/01/2023] Fábio F S Júnior: 9$ padaria; crédito
-[21:46, 24/01/2023] Fábio F S Júnior: 55$ Gasolina Carrefour; crédito
-[17:08, 26/01/2023] Fábio F S Júnior: 188$ Livro Melissa; crédito
-[12:44, 28/01/2023] Fábio F S Júnior: 62,60$ algumas compras atacarejo; crédito
-[12:44, 28/01/2023] Fábio F S Júnior: 29,88$ laranja e algumas frutas; crédito
-[20:59, 28/01/2023] Fábio F S Júnior: 19,90$ uber festa kauane; crédito
-[00:50, 01/02/2023] Fábio F S Júnior: 82$ cueca box; crédito
-[12:41, 01/02/2023] Fábio F S Júnior: 16$ almoço; crédito
-[21:52, 01/02/2023] Fábio F S Júnior: 109$ Ventilador Cadence 2x; crédito
-[22:57, 01/02/2023] Fábio F S Júnior: 206,28$ Tenis Olympikos em 4x; crédito
-[11:40, 02/02/2023] Fábio F S Júnior: 271,07$ Faculdade Estácio; crédito
-[22:52, 02/02/2023] Fábio F S Júnior: 61,50$ pizzaria passira; crédito
-[13:40, 03/02/2023] Fábio F S Júnior: 10$ espinheira santa; crédito
-[16:59, 03/02/2023] Fábio F S Júnior: 2$ pastilha; crédito
-[20:24, 04/02/2023] Fábio F S Júnior: 64$ sushi 70 peças; crédito
+[09:14, 07/02/2023] Maria Silva: 80$ massagem; débito; saúde
+[13:45, 03/01/2023] João Pedro: 50$ livro; crédito; cultura
+[18:23, 08/02/2023] Ana Paula: 60$ jantar; dinheiro; alimentação
+[08:56, 01/01/2023] Fabrício Oliveira: 30$ sessão de fotos; débito; lazer
+[21:12, 10/02/2023] Daniela Souza: 40$ caminhada guiada; dinheiro; esporte
+[12:34, 02/01/2023] Marcelo Santos: 100$ curso online; crédito; educação
+[19:45, 07/02/2023] Juliana Alves: 25$ yoga; débito; saúde
+[10:22, 05/02/2023] Gustavo Ferreira: 90$ jantar; dinheiro; alimentação
+[14:12, 01/01/2023] Thiago Oliveira: 35$ passeio de bicicleta; crédito; lazer
+[16:54, 06/02/2023] Gabriela Ribeiro: 75$ aula de dança; dinheiro; esporte
+[09:21, 01/01/2023] Lucas Silva: 50$ cinema; débito; lazer
+[13:12, 02/01/2023] Rafaela Costa: 120$ curso presencial; crédito; educação
+[17:45, 07/02/2023] Beatriz Sousa: 90$ jantar; dinheiro; alimentação
+[09:34, 06/02/2023] Tiago Pereira: 35$ piquenique; débito; lazer
+[12:56, 01/01/2023] Elisa Moreira: 50$ teatro; crédito; cultura
+[15:45, 05/02/2023] Guilherme Santos: 60$ massagem; dinheiro; saúde
+[19:23, 06/02/2023] Isadora Silva: 80$ jantar; débito; alimentação
+[10:12, 01/01/2023] Mateus Oliveira: 25$ caminhada na natureza; crédito; lazer
+[14:56, 02/01/2023] Karina Alves: 120$ curso de idiomas; dinheiro; educação
+[17:34, 07/02/2023] Rodrigo Santos: 35$ cinema; débito; lazer
+[13:22, 07/02/2023] João Silva: 50$ jantar; débito; alimentação
+[08:44, 05/12/2022] Maria Gomes: 80$ eletrônicos; crédito; eletrônicos
+[16:06, 31/08/2022] Gabriel Oliveira: 60$ flores; dinheiro; decoração
+[23:59, 12/01/2023] Lucas Rodrigues: 120$ livros; crédito; livros
+[09:00, 22/06/2022] Ana Paula: 90$ roupas; dinheiro; moda
+[11:11, 07/07/2022] Carlos Alberto: 40$ gasolina; débito; transporte
+[18:30, 01/01/2023] Juliana Sousa: 200$ curso online; crédito; educação
+[10:15, 08/05/2022] José Francisco: 100$ jogos; crédito; entretenimento
+[23:00, 15/09/2022] Fabiana Almeida: 150$ cabelo; dinheiro; beleza
+[12:01, 17/11/2022] Rodrigo Souza: 70$ presente; crédito; presentes
+[21:22, 20/12/2022] Luiza Ferreira: 120$ jóias; dinheiro; jóias
+[16:45, 02/02/2023] Felipe Silva: 90$ sapatos; débito; moda
+[09:30, 25/03/2022] Renata Oliveira: 50$ massagem; dinheiro; saúde
+[19:00, 01/07/2022] Beatriz Santos: 130$ viagem; crédito; viagem
+[08:00, 08/01/2023] Marcos Souza: 200$ relógios; dinheiro; acessórios
+[13:33, 30/06/2022] Tania Siqueira: 60$ perfumes; crédito; beleza
+[14:22, 11/05/2022] Luciana Costa: 70$ jantar; dinheiro; alimentação
+[12:00, 01/12/2022] Fabio Alves: 80$ roupas; débito; moda
+[22:30, 19/02/2023] Gabriela Mendes: 90$ decoração; dinheiro; decoração
+[10:15, 31/07/2022] Luiz Henrique: 50$ cinema; crédito; entretenimento

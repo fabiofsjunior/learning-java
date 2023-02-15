@@ -2,16 +2,21 @@ package cursojava.classes;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 public class LerArquivos {
     public static void main(String[] args) throws IOException {
 
-        // Inicia arquivo pelo diretório.
+        // Inicia arquivo pelo diretório a ser escrito.
         File arquivo = new File(
                 "C:\\Users\\junio\\OneDrive\\Desktop\\GitHub Repositórios\\learning-java\\JavaDevFullStack\\src\\cursojava\\arquivo.csv");
 
@@ -67,7 +72,7 @@ public class LerArquivos {
 
             // Verifica se a linha está em branco.
             if (linha != null && !linha.isEmpty()) {
-                System.out.println(linha);
+                //System.out.println(linha);
             }
         }
 
@@ -78,6 +83,25 @@ public class LerArquivos {
             escreveArquivos.write(itemTransacao.toString());
 
         }
+
+        //Organiza a estrutura do arquivo JSON.
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
+        String jsonUser = gson.toJson(transacoes);
+
+        //Criação do arquivo JSON
+        File arquivoJson = new File(
+                "C:\\Users\\junio\\OneDrive\\Desktop\\GitHub Repositórios\\learning-java\\JavaDevFullStack\\src\\cursojava\\arquivo.json");
+
+        if (!arquivoJson.exists()) {
+            arquivo.createNewFile();
+        }
+        //responsável por escrever o arquivo reconhecendo a escrita brasileira e simbolos.
+        OutputStreamWriter escreverJson = new OutputStreamWriter(new FileOutputStream(arquivoJson), "UTF-8");
+        escreverJson.write(jsonUser);
+
+        escreverJson.flush();
+        escreverJson.close();
 
         escreveArquivos.flush();
         escreveArquivos.close();

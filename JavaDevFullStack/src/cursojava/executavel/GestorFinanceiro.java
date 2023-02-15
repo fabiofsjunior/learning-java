@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
+import cursojava.classes.LerArquivos;
 import cursojava.classes.PlanilhaGastos;
 
 /* [Forma mais simples]
