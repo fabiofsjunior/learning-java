@@ -16,11 +16,11 @@ import com.google.gson.GsonBuilder;
 public class LerArquivos {
     public static void main(String[] args) throws IOException {
 
+        // Metodologia simples
+
         // Inicia arquivo pelo diretório a ser escrito.
         File arquivo = new File(
                 "C:\\Users\\junio\\OneDrive\\Desktop\\GitHub Repositórios\\learning-java\\JavaDevFullStack\\src\\cursojava\\arquivo.csv");
-
-        // Metodologia simples
 
         // Condição caso o arquivo não exista, criar um novo
 
@@ -72,7 +72,7 @@ public class LerArquivos {
 
             // Verifica se a linha está em branco.
             if (linha != null && !linha.isEmpty()) {
-                //System.out.println(linha);
+                // System.out.println(linha);
             }
         }
 
@@ -84,19 +84,20 @@ public class LerArquivos {
 
         }
 
-        //Organiza a estrutura do arquivo JSON.
+        // Organiza a estrutura do arquivo JSON.
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
         String jsonUser = gson.toJson(transacoes);
 
-        //Criação do arquivo JSON
+        // Criação do arquivo JSON
         File arquivoJson = new File(
                 "C:\\Users\\junio\\OneDrive\\Desktop\\GitHub Repositórios\\learning-java\\JavaDevFullStack\\src\\cursojava\\arquivo.json");
 
         if (!arquivoJson.exists()) {
             arquivo.createNewFile();
         }
-        //responsável por escrever o arquivo reconhecendo a escrita brasileira e simbolos.
+        // responsável por escrever o arquivo reconhecendo a escrita brasileira e
+        // simbolos.
         OutputStreamWriter escreverJson = new OutputStreamWriter(new FileOutputStream(arquivoJson), "UTF-8");
         escreverJson.write(jsonUser);
 
